@@ -1,4 +1,5 @@
 What is Babel? 🚀
+===================================================================================
 Babel is a JavaScript compiler that helps convert modern JavaScript (ES6+) code into older versions (ES5) so that it can run in older browsers that don’t support new features.
 
 Imagine you write modern JavaScript code using ES6 features like let, const, arrow functions, async/await, etc. But older browsers (like Internet Explorer) don’t support / understand ES6.
