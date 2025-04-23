@@ -16,3 +16,4 @@ Roadside Coder
 * Variable Shadowing
 * Illegal Shadowing
 * Declaration
+* Declaration without Initialization

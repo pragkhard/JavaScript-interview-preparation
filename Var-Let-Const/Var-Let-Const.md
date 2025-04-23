@@ -108,6 +108,24 @@ const a;
 
 // O/p - SyntaxError: Missing initializer in const declaration
 
+let a;
+{
+let a;
+}
+//It is completely fine comes under shadowing
+
+Declaration without Initialization
+-------------------------------------
+
+"var" and "let" we can declare it without providing it any value but "const" can't be declared it without initialization
+
+var a;
+
+let a;
+
+const a; // SyntaxError: Missing initializer in const declaration
+const a = 20; //correct way
+
 Hoisting:
 ----------------
 In JavaScript, hoisting is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.

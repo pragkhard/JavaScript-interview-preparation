@@ -103,6 +103,15 @@ const a;
 // O/p - SyntaxError: Missing initializer in const declaration
 
 // =======================================================================================
+// Declaration without Initialization
+
+var a;
+
+let a;
+
+const a; // SyntaxError: Missing initializer in const declaration
+
+// =======================================================================================
   // Question 4 : Hoisting
   
   console.log(a);
