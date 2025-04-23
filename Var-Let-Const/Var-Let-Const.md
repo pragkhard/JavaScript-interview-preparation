@@ -45,6 +45,8 @@ In second example, var b = "Bye"; is illegal shadowing because b is already decl
 
 We can shadow "var" variable by using "let" but can not do the opposite 
 
+//Legal Shadowing : We can shadow "var" variable by using "let/const"
+
         function test() {
             var a = "GeeksforGeeks";
         
@@ -58,6 +60,7 @@ We can shadow "var" variable by using "let" but can not do the opposite
         O/p - Hi
 
  But can't do this 
+ // Illegal Shadowing : We can shadow "let/const" variable by using "var"
 
         function test() {
             let a = "GeeksforGeeks";
