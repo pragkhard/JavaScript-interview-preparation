@@ -20,3 +20,4 @@ Roadside Coder
 * Re-Initialization
 * Hoisting
 * Javascript exection context
+* Temporal Dead Zone (TDZ)

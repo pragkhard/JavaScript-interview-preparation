@@ -157,3 +157,9 @@ Temporal Dead Zone (TDZ):
 TDZ is a specific behavior related to variables declared using let and const. It refers to the period between the start of the block scope and the actual declaration of the variable.
 During the TDZ, accessing the variable will result in a ReferenceError.
 In fourth example, trying to log a, b, and c before their respective declarations will result in ReferenceError because they are in the TDZ until they are declared.
+
+TDZ is the time between the declaration and the initilization of let and const variables.
+
+console.log(a, b);
+const c = 30;
+let b = 20;
