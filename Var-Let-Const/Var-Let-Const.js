@@ -14,21 +14,36 @@ function test() {
   }
   
   test();
-  
+  //O/p - Hi Hello
+
+  function test() {
+    var a = "Hello";
+
+    if (true) {
+    var a = "Hi"; // New value assigned
+    console.log(a);
+    }
+
+    console.log(a);
+}
+
+test();
+//O/p - Hi Hi
+
   // Question 2 :  Illegal Shadowing
   
-//   function func() {
-//     var a = "Hello";
-//     let b = "Namaste";
+  function func() {
+    var a = "GeeksforGeeks";
+    let b = "Namaste";
   
-//     if (true) {
-//       let a = "Hi"; // Legal Shadowing
-//       var b = "Bye"; // Illegal Shadowing
-//       console.log(a); // It will print 'GeeksforGeeks'
-//       console.log(b); // It will print error
-//     }
-//   }
-//   test();
+    if (true) {
+      let a = "Hi"; // Legal Shadowing
+      var b = "Bye"; // Illegal Shadowing
+      console.log(a); // It will print 'GeeksforGeeks'
+      console.log(b); // It will print error
+    }
+  }
+  test();
   
   // Question 3 : Hoisting
   
