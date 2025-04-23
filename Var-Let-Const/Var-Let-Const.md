@@ -43,6 +43,51 @@ Illegal Shadowing:
 This occurs when trying to shadow a variable using var within the same scope where that variable is already defined using let or const.
 In second example, var b = "Bye"; is illegal shadowing because b is already declared using let in the same scope.
 
+We can shadow var variable by using let but can not do the opposite 
+
+        function test() {
+            var a = "GeeksforGeeks";
+        
+            if (true) {
+            let a = "Hi"; // Legal Shadowing
+            console.log(a); 
+            }
+        }
+        test();
+
+        O/p - Hi
+
+ But can't do this 
+
+        function test() {
+            let a = "GeeksforGeeks";
+        
+            if (true) {
+            var a = "Hi"; // Illegal Shadowing
+            console.log(a); 
+            }
+        }
+        test();
+
+       O/p - SyntaxError: Identifier 'a' has already been declared
+
+One more example - 
+
+        function test() {
+            var a = "GeeksforGeeks";
+            let b = "Namaste";
+        
+            if (true) {
+            let a = "Hi"; // Legal Shadowing
+            var b = "Bye"; // Illegal Shadowing
+            console.log(a); // It will print 'GeeksforGeeks'
+            console.log(b); // It will print error
+            }
+        }
+        test();
+
+        O/p - SyntaxError: Identifier 'b' has already been declared
+
 Hoisting:
 ----------------
 In JavaScript, hoisting is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.

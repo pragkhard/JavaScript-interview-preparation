@@ -2,6 +2,7 @@
 
 // Question 1 : Variable Shadowing
 
+//Shadowing let variable by using let 
 function test() {
     let a = "Hello";
   
@@ -16,6 +17,9 @@ function test() {
   test();
   //O/p - Hi Hello
 
+// =======================================================================================
+
+//Shadowing var variable by using var 
   function test() {
     var a = "Hello";
 
@@ -30,6 +34,7 @@ function test() {
 test();
 //O/p - Hi Hi
 
+// =======================================================================================
   // Question 2 :  Illegal Shadowing
   
   function func() {
