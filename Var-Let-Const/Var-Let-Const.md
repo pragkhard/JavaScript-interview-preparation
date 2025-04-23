@@ -131,7 +131,6 @@ const a;
 
 Re-Initialization
 ----------------------
-
 "var" and "let" we can be Re-Initialization but "const" can't be Re-Initialization
 
 var a = 10;
