@@ -81,20 +81,22 @@ test();
     }
   }
   test();
+//   O/p - SyntaxError: Identifier 'b' has already been declared
+
 // =======================================================================================
   // Question 3 : Hoisting
   
-//   console.log(a);
+  console.log(a);
   
-//   var a = 10;
+  var a = 10;
 
 // =======================================================================================
 
   // Question 4 : Temporal Dead Zone
   
-//   console.log(a, b, c);
+  console.log(a, b, c);
   
-//   const c = 30;
-//   let b = 20;
-//   var a = 10;
+  const c = 30;
+  let b = 20;
+  var a = 10;
   
