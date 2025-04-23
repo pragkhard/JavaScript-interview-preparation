@@ -14,4 +14,4 @@ Roadside Coder
 * Scope
 * Type of Scope
 * Variable Shadowing
-* Illegal Shadowing:
+* Illegal Shadowing

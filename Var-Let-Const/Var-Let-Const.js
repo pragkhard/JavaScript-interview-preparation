@@ -1,5 +1,7 @@
 // VAR, LET & CONST Interview Questions
 
+// =======================================================================================
+
 // Question 1 : Variable Shadowing
 
 //Shadowing let variable by using let 
@@ -35,8 +37,38 @@ test();
 //O/p - Hi Hi
 
 // =======================================================================================
+
   // Question 2 :  Illegal Shadowing
-  
+
+  //Legal Shadowing : We can shadow "var" variable by using "let"
+  function test() {
+    var a = "GeeksforGeeks";
+
+    if (true) {
+    let a = "Hi"; // Legal Shadowing
+    console.log(a); 
+    }
+}
+test();
+
+// O/p - Hi
+
+// =======================================================================================
+
+// Illegal Shadowing : We can shadow "let" variable by using "var"
+function test() {
+    let a = "GeeksforGeeks";
+
+    if (true) {
+    var a = "Hi"; // Illegal Shadowing
+    console.log(a); 
+    }
+}
+test();
+
+// O/p - SyntaxError: Identifier 'a' has already been declared
+
+// =======================================================================================
   function func() {
     var a = "GeeksforGeeks";
     let b = "Namaste";
@@ -49,13 +81,15 @@ test();
     }
   }
   test();
-  
+// =======================================================================================
   // Question 3 : Hoisting
   
 //   console.log(a);
   
 //   var a = 10;
-  
+
+// =======================================================================================
+
   // Question 4 : Temporal Dead Zone
   
 //   console.log(a, b, c);

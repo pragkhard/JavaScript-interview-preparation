@@ -43,7 +43,7 @@ Illegal Shadowing:
 This occurs when trying to shadow a variable using var within the same scope where that variable is already defined using let or const.
 In second example, var b = "Bye"; is illegal shadowing because b is already declared using let in the same scope.
 
-We can shadow var variable by using let but can not do the opposite 
+We can shadow "var" variable by using "let" but can not do the opposite 
 
         function test() {
             var a = "GeeksforGeeks";
