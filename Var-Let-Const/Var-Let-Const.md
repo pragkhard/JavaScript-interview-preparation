@@ -149,6 +149,9 @@ In JavaScript, hoisting is a behavior where variable and function declarations a
 However, only the declarations are hoisted, not the initializations or assignments.
 In third example, console.log(a); will result in undefined because the variable a is hoisted to the top but not initialized until later in the code (var a = 10;).
 
+console.log(a);
+var a = 10;
+
 Temporal Dead Zone (TDZ):
 -----------------------------
 TDZ is a specific behavior related to variables declared using let and const. It refers to the period between the start of the block scope and the actual declaration of the variable.
