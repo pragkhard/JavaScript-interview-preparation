@@ -110,7 +110,9 @@ const a;
 
 let a;
 {
+
 let a;
+
 }
 //It is completely fine comes under shadowing
 
