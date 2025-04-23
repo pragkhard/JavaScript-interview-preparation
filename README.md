@@ -6,3 +6,7 @@ Imagine you write modern JavaScript code using ES6 features like let, const, arr
 So,Babel translates (transpiles) your modern code into older JavaScript (ES5) so it works everywhere.
 
 Vite uses "esbuild" as its default JavaScript bundler and transpiler. esbuild is much faster than Babel because it is written in Go and optimized for speed.
+
+Roadside Coder
+========================================================================================
+1. Var, Let and Const
