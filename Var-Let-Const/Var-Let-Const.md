@@ -59,8 +59,8 @@ We can shadow "var" variable by using "let" but can not do the opposite
 
         O/p - Hi
 
- But can't do this 
- // Illegal Shadowing : We can shadow "let/const" variable by using "var"
+ But can't do this -
+ // Illegal Shadowing : We can't shadow "let/const" variable by using "var"
 
         function test() {
             let a = "GeeksforGeeks";
@@ -90,6 +90,23 @@ One more example -
         test();
 
         O/p - SyntaxError: Identifier 'b' has already been declared
+
+Declaration
+--------------
+We can redeclared "var" but can't be redeclared "let" and "const" in the same scope
+
+var a;
+var a;
+
+let a;
+let a;
+
+// O/p - SyntaxError: Identifier 'a' has already been declared
+
+const a;
+const a;
+
+// O/p - SyntaxError: Missing initializer in const declaration
 
 Hoisting:
 ----------------

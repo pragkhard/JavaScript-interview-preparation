@@ -55,7 +55,7 @@ test();
 
 // =======================================================================================
 
-// Illegal Shadowing : We can shadow "let" variable by using "var"
+// Illegal Shadowing : We can't shadow "let" variable by using "var"
 function test() {
     let a = "GeeksforGeeks";
 
@@ -84,7 +84,26 @@ test();
 //   O/p - SyntaxError: Identifier 'b' has already been declared
 
 // =======================================================================================
-  // Question 3 : Hoisting
+
+// Question 3 : Declaration
+
+// We can redeclare var but can't redeclare let and const 
+
+var a;
+var a;
+
+let a;
+let a;
+
+// O/p - SyntaxError: Identifier 'a' has already been declared
+
+const a;
+const a;
+
+// O/p - SyntaxError: Missing initializer in const declaration
+
+// =======================================================================================
+  // Question 4 : Hoisting
   
   console.log(a);
   
@@ -92,7 +111,7 @@ test();
 
 // =======================================================================================
 
-  // Question 4 : Temporal Dead Zone
+  // Question 5 : Temporal Dead Zone
   
   console.log(a, b, c);
   
