@@ -6,7 +6,7 @@ function test() {
     let a = "Hello";
   
     if (true) {
-      let a = "Hello"; // New value assigned
+      let a = "Hi"; // New value assigned
       console.log(a);
     }
   

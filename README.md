@@ -10,3 +10,8 @@ Vite uses "esbuild" as its default JavaScript bundler and transpiler. esbuild is
 Roadside Coder
 ========================================================================================
 1. Var, Let and Const
+========================================================================================
+* Scope
+* Type of Scope
+* Variable Shadowing
+* Illegal Shadowing:
