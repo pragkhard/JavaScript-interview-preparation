@@ -1,6 +1,7 @@
 Var, Let and Const
 ===========================================================================================
 Variable Shadowing:
+-------------------
         In JavaScript, variable shadowing occurs when a variable with the same name as a variable in a higher scope is declared in a lower scope.
         It's a common practice but can lead to confusion if not used carefully because the inner variable will "shadow" the outer variable.
         In first example, let a inside the if block shadows the outer let a, and they are two separate variables despite having the same name.
@@ -9,7 +10,7 @@ Variable Shadowing:
             let a = "Hello";
   
             if (true) {
-            let a = "Hi"; // New value assigned, the inner variable will override to the outer variable.
+            let a = "Hi"; // New value assigned, the inner variable will overlap to the outer variable.
             console.log(a);
             }
   
@@ -20,7 +21,7 @@ Variable Shadowing:
 
          O/P - Hi Hello
 
- But in place of "let, const" if we will use "var" it will not override
+ But in place of "let, const" if we will use "var" it will not overlap
 
         function test() {
             var a = "Hello";
