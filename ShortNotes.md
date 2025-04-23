@@ -1,0 +1,1 @@
+The Event Loop continuously checks the Call Stack and the Callback Queue. If the Call Stack is empty, it pushes tasks from the Callback Queue (such as asynchronous callbacks) into the Call Stack for execution. This allows JavaScript to perform non-blocking operations while handling only one operation at a time in the main thread.
