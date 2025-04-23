@@ -123,7 +123,8 @@ var a;
 
 let a;
 
-const a; // SyntaxError: Missing initializer in const declaration
+const a; 
+O/p - SyntaxError: Missing initializer in const declaration
 const a = 20; //correct way
 
 Hoisting:
