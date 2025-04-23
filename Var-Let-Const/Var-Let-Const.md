@@ -1,7 +1,7 @@
 Var, Let and Const
 ===========================================================================================
 
-*Variable Shadowing:
+//Variable Shadowing:
         In JavaScript, variable shadowing occurs when a variable with the same name as a variable in a higher scope is declared in a lower scope.
         It's a common practice but can lead to confusion if not used carefully because the inner variable will "shadow" the outer variable.
         In first example, let a inside the if block shadows the outer let a, and they are two separate variables despite having the same name.
