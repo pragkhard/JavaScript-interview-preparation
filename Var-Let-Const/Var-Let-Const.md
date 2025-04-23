@@ -129,6 +129,20 @@ const a;
 * O/p - SyntaxError: Missing initializer in const declaration
 * const a = 20; //correct way
 
+Re-Initialization
+----------------------
+"var" and "let" we can be Re-Initialization but "const" can't be Re-Initialization
+
+var a = 10;
+a = 20;
+
+let a = 10;
+a = 20;
+
+const a = 10;
+a = 20; 
+O/p - TypeError: Assignment to constant variable.
+
 Hoisting:
 ----------------
 In JavaScript, hoisting is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.

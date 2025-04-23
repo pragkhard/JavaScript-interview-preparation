@@ -17,3 +17,6 @@ Roadside Coder
 * Illegal Shadowing
 * Declaration
 * Declaration without Initialization
+* Re-Initialization
+* Hoisting
+* Javascript exection context
