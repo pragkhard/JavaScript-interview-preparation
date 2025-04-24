@@ -70,13 +70,45 @@ Question 4: Map Polyfill
 ----------------------------
 Explanation: This code snippet adds a custom implementation of the map() method to the Array prototype. It mimics the functionality of the native map() method by iterating through the array and applying a callback function to each element to create a new array with the modified values.
 
+Array.prototype.myMap = function (cb) {
+  let temp = [];
+  for (let i = 0; i < this.length; i++) {
+    temp.push(cb(this[i], i, this));
+  }
+
+  return temp;
+};
+
+
 Question 5: Filter Polyfill
 -------------------------------
 Explanation: Similar to the Map Polyfill, this code adds a custom implementation of the filter() method to the Array prototype. It iterates through the array and applies a callback function to each element, returning a new array containing only the elements that meet the specified condition in the callback.
 
+Array.prototype.myFilter = function (cb) {
+  let temp = [];
+  for (let i = 0; i < this.length; i++) {
+    if (cb(this[i], i, this)) temp.push(this[i]);
+  }
+
+  return temp;
+};
+
+
 Question 6: Reduce Polyfill
 ---------------------------------
 Explanation: This snippet introduces a custom implementation of the reduce() method for arrays. It iterates through the array, applying a callback function that performs reduction or aggregation operations, similar to the native reduce() method, and returns the final accumulated result.
+
+Array.prototype.myReduce = function (cb, initialValue) {
+  var accumulator = initialValue;
+
+  for (let i = 0; i < this.length; i++) {
+    accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
+  }
+
+  return accumulator;
+};
+
+
 
 Question 7: map vs foreach
 -------------------------------
