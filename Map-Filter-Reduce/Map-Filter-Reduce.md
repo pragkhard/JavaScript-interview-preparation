@@ -19,25 +19,46 @@ console.log(multiplyThree);
 const multiplyThree = nums.map((num, i, arr) => {return num * 5})
 console.log(multiplyThree)
 
-num - current element
-i - index
+num - current element,
+i - index,
 arr - actual element
 
 Question 2: Array.filter()
 ------------------------------
 Explanation: The filter() method creates a new array with all elements that pass the test implemented by the provided function. It returns a filtered array based on the condition specified in the callback function, where only elements that satisfy the condition are included.
 
+const nums = [1, 2, 3, 4];
+
+const multiplyThree = nums.filter((num, i, arr) => num > 2); // cb can take num, index and array
+console.log(multiplyThree);
+
+const multiplyThree = nums.filter((num, i, arr) => {return num > 2 })
+console.log(multiplyThree)
+
+num - current element,
+i - index,
+arr - actual element
+
 Question 3: Array.reduce()
+-----------------------------
 Explanation: The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value. It's often used for aggregating data, such as calculating a sum, by iterating through the array and accumulating the results based on the logic in the callback function.
 
-Reducer - use at the place where you have to take all the elements of an array and comeout in the single value.
+In simple words-
+Reducer is use at the place where you have to take all the elements of an array and comeout in the single value.
 
-const sum2 = nums.reduce((acc, curr, i, arr) => {
-    return acc + curr
-}, 0)
+const nums = [1, 2, 3, 4];
+
+const sum = nums.reduce((acc, curr, i, arr) => {
+  return acc + curr;
+}, 0);
+
+console.log(sum); // 10
 
 It take callback function and initial value
 acc - accumulator (result of previous computation)
+curr - current element,
+i - index,
+arr - actual element
 
 Polyfill
 ==============
