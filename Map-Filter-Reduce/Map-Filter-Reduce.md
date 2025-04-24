@@ -33,6 +33,8 @@ acc - accumulator (result of previous computation)
 Polyfill
 ==============
 
+A polyfill is a piece of code that adds new JavaScript features to older browsers that don't support them. It helps ensure web applications work consistently across different browsers.
+
 Question 4: Map Polyfill
 Explanation: This code snippet adds a custom implementation of the map() method to the Array prototype. It mimics the functionality of the native map() method by iterating through the array and applying a callback function to each element to create a new array with the modified values.
 
