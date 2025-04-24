@@ -6,16 +6,21 @@ Map-Filter-Reduce - Array methods that used to iterate over an array
 Question 1: Array.map()
 Explanation: The map() method in JavaScript creates a new array populated with the results of calling a provided function on every element in the calling array. It doesn't modify the original array but returns a new modified array based on the callback function's logic.
 
-Map- map is used to creating the new array from the existing one by applying a function to each one of the element 
+Map is used to creating the new array from the existing one by applying a function to each one of the element 
 
-const mul = nums.map((num, i, arr) => {return num * 5})
-console.log(mul)
+const nums = [1, 2, 3, 4];
+
+const multiplyThree = nums.map((num, i, arr) => num * 3); // cb can take num, index and array
+console.log(multiplyThree);
+
+const multiplyThree = nums.map((num, i, arr) => {return num * 5})
+console.log(multiplyThree)
 
 num - current element
 i - index
 arr - actual element
 
-Question 2: Array.filter()
+-Question 2: Array.filter()-
 Explanation: The filter() method creates a new array with all elements that pass the test implemented by the provided function. It returns a filtered array based on the condition specified in the callback function, where only elements that satisfy the condition are included.
 
 Question 3: Array.reduce()

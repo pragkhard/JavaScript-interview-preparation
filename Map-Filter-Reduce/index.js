@@ -2,10 +2,7 @@
 
 // Question 1 : Array.map()
 
-const nums = [1, 2, 3, 4];
 
-const multiplyThree = nums.map((num, i, arr) => num * 3); // cb can take num, index and array
-console.log(multiplyThree);
 
 
 
