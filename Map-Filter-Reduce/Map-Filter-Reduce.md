@@ -54,12 +54,12 @@ Reducer is use at the place where you have to take all the elements of an array 
 
         console.log(sum); // 10
 
-It take callback function and initial value
+                It take callback function and initial value
 
-acc - accumulator (result of previous computation),
-curr - current element,
-i - index,
-arr - actual element
+                acc - accumulator (result of previous computation),
+                curr - current element,
+                i - index,
+                arr - actual element
 
 Polyfill
 ==============
@@ -127,61 +127,67 @@ Q1 - Return only the names of students in capital
 ------------------------------------------------------
 
 Solution 1 : Traditional for() loop
-let names = [];
-for (let index = 0; index < studentRecords.length; index++){
-     names.push(students[index].name.toUpperCase());
-}
+--------------------------------------
 
-console.log(names);
+        let names = [];
+        for (let index = 0; index < studentRecords.length; index++){
+            names.push(students[index].name.toUpperCase());
+        }
+
+        console.log(names);
 
 Solution 2 : forEach()
-let names = []
-students.forEach( student => {
-     names.push(student.name.toUpperCase());
-})
+-------------------------------
 
-console.log(names);
+        let names = []
+        students.forEach( student => {
+            names.push(student.name.toUpperCase());
+        })
+
+        console.log(names);
 
 Solution 3 : map() 
-let names = students.map( stu => stu.name.toUpperCase());
-console.log(names);
+-------------------
+
+        let names = students.map( stu => stu.name.toUpperCase());
+        console.log(names);
 
 
 Q2 - we want to get the details of students who scored more than 60 marks.
 ----------------------------------------------------------------------------
 
-let names = students.filter(stu => stu.marks > 60);
-console.log(names);
+        let names = students.filter(stu => stu.marks > 60);
+        console.log(names);
 
 
 Q3 - Get the details of students who scored more than 60 marks and have rollNumber greater than 15.
 ---------------------------------------------------------------------------------------------------
 
-let names = students.filter(stu => stu.marks > 60 && stu.rollNumber > 20)
-console.log(names);
+        let names = students.filter(stu => stu.marks > 60 && stu.rollNumber > 20)
+        console.log(names);
 
 
 Q4 - Sum total of the marks of the students
 ---------------------------------------------
 
-let totalMarks = students.reduce( ((acc,emp) => acc+emp.marks), 0)
-console.log(totalMarks);
+        let totalMarks = students.reduce( ((acc,emp) => acc+emp.marks), 0)
+        console.log(totalMarks);
 
 
 Q5 - Get only the names of the students who scored more than 60 marks
 --------------------------------------------------------------------------
 
-let names = students.filter(stu => stu.marks > 50).map(stu => stu.name)
-console.log(names);
+        let names = students.filter(stu => stu.marks > 50).map(stu => stu.name)
+        console.log(names);
 
 
 Q6 - print the total marks of the students with marks greater than 60 after 20 marks has been added to those students who scored less than 60.
 --------------------------------------------------------------------------------------------------
 
-let totalMarks = studentRecords.map(function(stu){ 
-    if(stu.marks < 60){
-        stu.marks += 20;}
-    return stu;
-}).filter(stu => stu.marks > 60).reduce((acc,curr) => acc+curr.marks, 0);
+        let totalMarks = studentRecords.map(function(stu){ 
+            if(stu.marks < 60){
+                stu.marks += 20;}
+            return stu;
+        }).filter(stu => stu.marks > 60).reduce((acc,curr) => acc+curr.marks, 0);
 
-console.log(totalMarks);
+        console.log(totalMarks);
