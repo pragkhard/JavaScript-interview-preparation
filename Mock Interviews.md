@@ -52,3 +52,32 @@ https://www.youtube.com/watch?v=IRzjOvoB5sw
 WsCube Tech
 https://www.youtube.com/@wscubetech/playlists
 
+Sandip Guchait
+https://www.youtube.com/@heysandip/playlists
+
+Turing
+https://www.youtube.com/@Turingcom/playlists
+
+
+Courses
+====================
+
+Akshay Saini
+https://www.youtube.com/@akshaymarch7/playlists
+
+RoadsideCoder
+https://www.youtube.com/@RoadsideCoder/playlists
+
+Code Step By Step
+https://www.youtube.com/@codestepbystep/playlists
+
+Yoshita Jain
+https://www.youtube.com/@yoshitajain0812/playlists
+
+Technical Sunejay
+https://www.youtube.com/@TechnicalSuneja/playlists
+
+Intellipaat
+https://www.youtube.com/@Intellipaat/playlists
+
+
