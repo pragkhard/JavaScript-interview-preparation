@@ -48,6 +48,9 @@ Reducer is use at the place where you have to take all the elements of an array 
 
         const nums = [1, 2, 3, 4];
 
+        const sum = nums.reduce((acc, curr, i, arr) => acc + curr)
+        console.log(sum)
+
         const sum = nums.reduce((acc, curr, i, arr) => {
         return acc + curr;
         }, 0);
