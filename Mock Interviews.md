@@ -49,6 +49,9 @@ https://www.youtube.com/@dev_insight_official
 Java Home Cloud (CI CD with Jenkins Pipeline)
 https://www.youtube.com/watch?v=IRzjOvoB5sw
 
+Akash Ingole
+https://www.youtube.com/@akashingole/playlists
+
 WsCube Tech
 https://www.youtube.com/@wscubetech/playlists
 
@@ -57,6 +60,9 @@ https://www.youtube.com/@heysandip/playlists
 
 Turing
 https://www.youtube.com/@Turingcom/playlists
+
+theSeniorDev
+https://www.youtube.com/@therealseniordev/playlists
 
 
 Courses
@@ -74,10 +80,35 @@ https://www.youtube.com/@codestepbystep/playlists
 Yoshita Jain
 https://www.youtube.com/@yoshitajain0812/playlists
 
+Chai aur Code
+https://www.youtube.com/@chaiaurcode/playlists
+
+CodeWithHarry
+https://www.youtube.com/@CodeWithHarry/playlists
+
 Technical Sunejay
 https://www.youtube.com/@TechnicalSuneja/playlists
 
 Intellipaat
-https://www.youtube.com/@Intellipaat/playlists
+https://www.youtube.com/@Intellipaat/playlists,
+
+CoderOne
+https://www.youtube.com/@CoderOne/playlists
+
+Seeema Holiday Developer
+https://www.youtube.com/@SeeemaHolidayDeveloper/playlists
+
+Level Up Frontend
+https://www.youtube.com/@himanshukhosla/playlists
+
+Nisha Singla
+https://www.youtube.com/@NishaSingla/playlists
+
+Codevolution
+https://www.youtube.com/@Codevolution/playlists
+
+Sofia Goyal
+https://www.youtube.com/@SofiaGoyal/playlists
+
 
 
