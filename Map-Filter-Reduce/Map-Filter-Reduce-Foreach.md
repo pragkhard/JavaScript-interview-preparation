@@ -187,10 +187,17 @@ Q5 - Get only the names of the students who scored more than 60 marks
 Q6 - print the total marks of the students with marks greater than 60 after 20 marks has been added to those students who scored less than 60.
 --------------------------------------------------------------------------------------------------
 
-        let totalMarks = studentRecords.map(function(stu){ 
+         let totalMarks = students.map((stu)=>{ 
             if(stu.marks < 60){
-                stu.marks += 20;}
+                stu.marks += 20;  
+                // stu.marks = stu.marks + 20;
+                }
             return stu;
         }).filter(stu => stu.marks > 60).reduce((acc,curr) => acc+curr.marks, 0);
 
         console.log(totalMarks);
+
+Map & Foreach
+===============
+Map does not modify the original array it will return the new array
+Foreach does not return the new array , but if you want to modify the original array we want to take the index otherwise it will return undefine        

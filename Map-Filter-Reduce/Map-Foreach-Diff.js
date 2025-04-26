@@ -1,2 +1,0 @@
-// Map does not modify the original array it will return the new array
-// Foreach does not return the new array , but if you want to modify the original array we want to take the index otherwise it will return undefine
