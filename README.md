@@ -24,6 +24,12 @@ Roadside Coder
 
 2. Map, filter and reduce
 
+* Map with Example
+* Filter with Example
+* Reduce with Example
+
+
+
 
 
 
