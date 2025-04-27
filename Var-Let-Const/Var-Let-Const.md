@@ -95,53 +95,53 @@ Declaration
 --------------
 We can redeclared "var" but can't be redeclared "let" and "const" in the same scope
 
-var a;
-var a;
+            var a;
+            var a;
 
-let a;
-let a;
+            let a;
+            let a;
 
-// O/p - SyntaxError: Identifier 'a' has already been declared
+            // O/p - SyntaxError: Identifier 'a' has already been declared
 
-const a;
-const a;
+            const a;
+            const a;
 
-// O/p - SyntaxError: Missing initializer in const declaration
+            // O/p - SyntaxError: Missing initializer in const declaration
 
-let a;
-{
+            let a;
+            {
 
-let a;
+            let a;
 
-}
-//It is completely fine comes under shadowing
+            }
+            //It is completely fine comes under shadowing
 
 Declaration without Initialization
 -------------------------------------
 
 "var" and "let" we can declare it without providing it any value but "const" can't be declared it without initialization
 
-var a;
+            var a;
 
-let a;
+            let a;
 
-const a; 
-* O/p - SyntaxError: Missing initializer in const declaration
-* const a = 20; //correct way
+            const a; 
+            * O/p - SyntaxError: Missing initializer in const declaration
+            * const a = 20; //correct way
 
 Re-Initialization
 ----------------------
 "var" and "let" we can be Re-Initialization but "const" can't be Re-Initialization
 
-var a = 10;
-a = 20;
+            var a = 10;
+            a = 20;
 
-let a = 10;
-a = 20;
+            let a = 10;
+            a = 20;
 
-const a = 10;
-a = 20; 
-O/p - TypeError: Assignment to constant variable.
+            const a = 10;
+            a = 20; 
+            O/p - TypeError: Assignment to constant variable.
 
 Hoisting:
 ----------------
@@ -149,8 +149,8 @@ In JavaScript, hoisting is a behavior where variable and function declarations a
 However, only the declarations are hoisted, not the initializations or assignments.
 In third example, console.log(a); will result in undefined because the variable a is hoisted to the top but not initialized until later in the code (var a = 10;).
 
-console.log(a);
-var a = 10;
+            console.log(a);
+            var a = 10;
 
 Temporal Dead Zone (TDZ):
 -----------------------------
@@ -160,6 +160,6 @@ In fourth example, trying to log a, b, and c before their respective declaration
 
 TDZ is the time between the declaration and the initilization of let and const variables.
 
-console.log(a, b);
-const c = 30;
-let b = 20;
+            console.log(a, b);
+            const c = 30;
+            let b = 20;
