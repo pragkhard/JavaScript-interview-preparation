@@ -112,10 +112,9 @@ Explanation: This snippet introduces a custom implementation of the reduce() met
         };
 
 
-
-Question 7: map vs foreach
--------------------------------
-Explanation: This section compares the usage of map(), forEach(), and traditional for() loops for processing data in an array of student records. It demonstrates how each method can be used to achieve specific tasks, such as transforming data, filtering based on conditions, and aggregating information, highlighting the differences in syntax and approach between these array iteration methods.
+Explanation: 
+---------------
+This section compares the usage of map(), forEach(), and traditional for() loops for processing data in an array of student records. It demonstrates how each method can be used to achieve specific tasks, such as transforming data, filtering based on conditions, and aggregating information, highlighting the differences in syntax and approach between these array iteration methods.
 
 -----------------------------------------------------------------------------------------------
 
@@ -197,7 +196,7 @@ Q6 - print the total marks of the students with marks greater than 60 after 20
 
         console.log(totalMarks);
 
-8. Map & Foreach
-===============
+Question 7: map vs foreach
+----------------------------
 Map does not modify the original array it will return the new array
 Foreach does not return the new array , but if you want to modify the original array we want to take the index otherwise it will return undefine        

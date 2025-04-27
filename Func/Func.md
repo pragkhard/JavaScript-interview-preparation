@@ -1,5 +1,34 @@
 Functions
 =====================
+ 
+Function Declaration-
+----------------------
+        function square(num) {
+        return num * num;
+        }
+        square()
+
+Function Expression-
+--------------------
+When we store the function inside variable 
+
+        const square = function (num) {
+        return num * num;
+        }
+        <!-- square(5) -->
+        console.log(square(5))   
+
+First Class Function -
+----------------------
+
+        function square(num) {
+        return num * num;
+        }
+
+        function displaySquare(fn) {
+        console.log("Square is " + fn(5));
+        }
+        displaySquare(square);
 
 Question 1: Function Code
 Explanation: This code defines a function square that calculates the square of a number and a function displaySquare that logs the square of 5 using the square function.

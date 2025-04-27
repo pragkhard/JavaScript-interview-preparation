@@ -70,8 +70,6 @@ Array.prototype.myReduce = function (cb, initialValue) {
 
 // =================================================================================================
 
-// Question 7 : map vs foreach
-
 let students = [
   { name: "Piyush", rollNumber: 31, marks: 80 },
   { name: "Jenny", rollNumber: 15, marks: 69 },
@@ -160,3 +158,5 @@ console.log(ma)
 
 const sum = students.reduce((acc, curr) => acc + curr.marks, 0)
 console.log(sum)
+
+// Question 7 : map vs foreach
