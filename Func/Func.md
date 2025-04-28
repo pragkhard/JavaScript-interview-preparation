@@ -66,6 +66,7 @@ In Q-1, the mul function uses the variables num1 and num2 from the global scope.
 In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
 
         // Q-1
+
         var num1 = 20,
         num2 = 3,
         name = "Roadsidecoder";
@@ -90,6 +91,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         // Roadsidecoder scored 7
 ---------------------------------------------------------------------------------------------
         Q-2
+
         for (var i = 0; i < 5; i++) {
         setTimeout(function () {
         // 3 times 5
@@ -105,6 +107,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         5
 ---------------------------------------------------------------------------------------------
         Q-3
+        
         for (var i = 0; i < 5; i++) {
         setTimeout(function () {
         // 3 times 5
