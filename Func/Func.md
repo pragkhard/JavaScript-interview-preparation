@@ -88,7 +88,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         //  O/p - 
         //  60
         // Roadsidecoder scored 7
-================================================================================================
+---------------------------------------------------------------------------------------------
         Q-2
         for (var i = 0; i < 5; i++) {
         setTimeout(function () {
@@ -103,7 +103,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         5
         5
         5
-===============================================================================================
+---------------------------------------------------------------------------------------------
         Q-3
         for (var i = 0; i < 5; i++) {
         setTimeout(function () {
@@ -118,7 +118,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         2
         3
         4
-===============================================================================================
+---------------------------------------------------------------------------------------------
 
 Question 5: Function Hoisting
 Explanation: Function hoisting allows calling a function before it is declared. The code demonstrates hoisting with a function declaration and how it behaves differently from non-hoisted functions.
