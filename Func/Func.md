@@ -20,6 +20,7 @@ When we store the function inside variable
 
 First Class Function -
 ----------------------
+pass to the another function just like the variable 
 
         function square(num) {
         return num * num;
@@ -34,13 +35,57 @@ Question 1: Function Code
 Explanation: This code defines a function square that calculates the square of a number and a function displaySquare that logs the square of 5 using the square function.
 
 Question 2: What is IIFE?
-Explanation: IIFE stands for Immediately Invoked Function Expression. It is a function that is executed immediately after it is defined. Example 1 shows a simple IIFE, while Example 2 demonstrates an IIFE with nested functions.
+---------------------------
+Explanation: IIFE stands for Immediately Invoked Function Expression. It is a function that is executed immediately after it is defined. 
+Example 1 shows a simple IIFE, while Example 2 demonstrates an IIFE with nested functions.
+
+        Eg-1
+
+        (function square(num) {
+        console.log(num * num);
+        })(7);
+
+        Eg-2
+
+        (function (x) {
+        return (function (y) {
+        console.log(x);
+        })(2);
+        })(1);
+
+        O/p - 1
 
 Question 3: Closure
 Explanation: The code demonstrates closure where the inner function displayName has access to the variable name defined in the outer function init.
 
 Question 4: Function Scope
-Explanation: This code showcases function scope and variable shadowing. In Q-1, the mul function uses the variables num1 and num2 from the global scope. In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
+Explanation: This code showcases function scope and variable shadowing. 
+In Q-1, the mul function uses the variables num1 and num2 from the global scope. 
+In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
+
+        // Q-1
+        var num1 = 20,
+        num2 = 3,
+        name = "Roadsidecoder";
+
+        function mul() {
+        return num1 * num2;
+        }
+        console.log(mul());
+
+        function getScore() {
+        var num1 = 3,
+        num2 = 4;
+        function add() {
+        return name + " scored " + (num1 + num2);
+        }
+        return add();
+        }
+        console.log(getScore());
+
+        //  O/p - 
+        //  60
+        // Roadsidecoder scored 7
 
 Question 5: Function Hoisting
 Explanation: Function hoisting allows calling a function before it is declared. The code demonstrates hoisting with a function declaration and how it behaves differently from non-hoisted functions.

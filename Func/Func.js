@@ -14,6 +14,8 @@ function displaySquare(fn) {
 }
 displaySquare(square);
 
+// ========================================================================
+
 // Question 2 :  What is IIFE?
 
 // Eg-1
@@ -28,7 +30,7 @@ displaySquare(square);
   })(2);
 })(1);
 
-
+// ========================================================================
 
 // Question 3 : Closure
 
@@ -42,7 +44,7 @@ function init() {
 }
 init();
 
-
+// ========================================================================
 
 // Question 4 : Function Scope
 
@@ -54,7 +56,8 @@ var num1 = 20,
 function mul() {
   return num1 * num2;
 }
-mul();
+console.log(mul());
+
 function getScore() {
   var num1 = 3,
     num2 = 4;
@@ -63,8 +66,13 @@ function getScore() {
   }
   return add();
 }
-getScore();
+console.log(getScore());
+//  O/p - 
+//  60
+// Roadsidecoder scored 7
 
+
+// ========================================================================
 
 // Q-2
 for (var i = 0; i < 5; i++) {
@@ -74,13 +82,13 @@ for (var i = 0; i < 5; i++) {
   }, i * 1000);
 }
 
-
+// ========================================================================
 
 // Question 5 : Function Hoisting
 
 // Without Hoisting:
 function functionName() {
-    console.log("work at tech");
+  console.log("work at tech");
 }
 
 functionName();         // function is called after declaring it
@@ -89,72 +97,72 @@ functionName();         // function is called after declaring it
 functionName();        // function is called before declaring it
 
 function functionName() {
-    console.log("work at tech");
+  console.log("work at tech");
 }
 
 // Output 
 var x = 21;
 var fun = function () {
-    console.log(x);
-    var x = 20;
+  console.log(x);
+  var x = 20;
 };
 fun();
 
-
+// ========================================================================
 
 // Question 6 :  Params vs arguments
 
 const fn = (a, x, y, ...numbers) => {
-    console.log(x, y)
+  console.log(x, y)
 };
-fn(5,6,7,8);
+fn(5, 6, 7, 8);
 
-
+// ========================================================================
 
 // Question 7 : Spread operator and rest operator
-function multiply(...nums){  // rest operator ,should always be the last one
-    console.log(nums[0]*nums[1]);
+function multiply(...nums) {  // rest operator ,should always be the last one
+  console.log(nums[0] * nums[1]);
 }
-var arr = [5,7];
+var arr = [5, 7];
 multiply(...arr) // Spread operator
 
-
+// ========================================================================
 
 // Question 8 : Callback
 
 function greeting(name) {
-    alert('Hello ' + name);
-  }
-  
-  function processUserInput(callback) {
-    var name = prompt('Please enter your name.');
-    callback(name);
+  alert('Hello ' + name);
 }
-  
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
 processUserInput(greeting);
 
-
+// ========================================================================
 
 // Question 9 : Arrow functions
 
 const add = (firstNum, secondNum) => {
-    return firstNum + secondNum;
+  return firstNum + secondNum;
 }
 
 const addNum = (firstNum, secondNum) => firstNum + secondNum;
 
-
+// ========================================================================
 
 // Question 10 : this
 
 let user = {
-    name: "Roadside Coder",
-    rc1: () => {
-      console.log("Subscribe to " + this.name);
-    },
-    rc2() {
-      console.log("Subscribe to " + this.name);
-    },
+  name: "Roadside Coder",
+  rc1: () => {
+    console.log("Subscribe to " + this.name);
+  },
+  rc2() {
+    console.log("Subscribe to " + this.name);
+  },
 };
 
 
