@@ -65,7 +65,7 @@ Explanation: This code showcases function scope and variable shadowing.
 In Q-1, the mul function uses the variables num1 and num2 from the global scope. 
 In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
 
-        // Q-1
+        Q-1
         var num1 = 20,
         num2 = 3,
         name = "Roadsidecoder";
