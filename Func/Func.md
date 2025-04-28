@@ -56,9 +56,11 @@ Example 1 shows a simple IIFE, while Example 2 demonstrates an IIFE with nested 
         O/p - 1
 
 Question 3: Closure
+--------------------------
 Explanation: The code demonstrates closure where the inner function displayName has access to the variable name defined in the outer function init.
 
 Question 4: Function Scope
+----------------------------
 Explanation: This code showcases function scope and variable shadowing. 
 In Q-1, the mul function uses the variables num1 and num2 from the global scope. 
 In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
@@ -86,6 +88,37 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         //  O/p - 
         //  60
         // Roadsidecoder scored 7
+================================================================================================
+        Q-2
+        for (var i = 0; i < 5; i++) {
+        setTimeout(function () {
+        // 3 times 5
+        console.log(i);
+        }, i * 1000);
+        }
+
+        O/p - 
+        5
+        5
+        5
+        5
+        5
+===============================================================================================
+        Q-3
+        for (var i = 0; i < 5; i++) {
+        setTimeout(function () {
+        // 3 times 5
+        console.log(i);
+        }, i * 1000);
+        }    
+
+        O/p - 
+        0
+        1
+        2
+        3
+        4
+===============================================================================================
 
 Question 5: Function Hoisting
 Explanation: Function hoisting allows calling a function before it is declared. The code demonstrates hoisting with a function declaration and how it behaves differently from non-hoisted functions.
