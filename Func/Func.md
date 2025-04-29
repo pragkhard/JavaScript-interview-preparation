@@ -300,9 +300,26 @@ Question 10: Difference between Arrow functions and the normal function
         }
         fn(1,2,3)
 
-        O/p- Error
+        O/p- Reference Error: Arguments not defined
         
 
 Question 11: this
 -------------------
 Explanation: The code defines an object user with methods rc1 and rc2. rc1 uses an arrow function, resulting in this referring to the global object, while rc2 uses a regular function, allowing this to refer to the object itself.
+
+        let user = {
+        name: "Roadside Coder",
+        rc1: () => {
+        console.log("Subscribe to " + this.name); // Pointing to the global obj
+        },
+        rc2() {
+        console.log("Subscribe to " + this.name); // Pointing to the user
+        },
+        };
+
+        user.rc1(); 
+        user.rc2(); 
+
+        O/p- 
+        Subscribe to Roadside Coder
+        Subscribe to Roadside Coder
