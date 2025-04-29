@@ -287,6 +287,7 @@ Question 10: Difference between Arrow functions and the normal function
         const square = (num) => return num * num;
 
         3. arguments
+        ---------------
 
         function fn(){
              console.log(arguments)   
