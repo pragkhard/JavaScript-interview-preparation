@@ -10,6 +10,7 @@ Vite uses "esbuild" as its default JavaScript bundler and transpiler. esbuild is
 Roadside Coder
 ========================================================================================
 1. Var, Let and Const
+---------------------------
 
 * Scope
 * Type of Scope
@@ -22,7 +23,9 @@ Roadside Coder
 * Javascript exection context
 * Temporal Dead Zone (TDZ)
 
+---------------------------------------------------------------------------------------------------
 2. Map, filter and reduce
+----------------------------
 
 * Map with Example
 * Filter with Example
@@ -35,6 +38,27 @@ Roadside Coder
     4. Sum total of the marks of the students
     5. Get only the names of the students who scored more than 60 marks
     6. print the total marks of the students with marks greater than 60 after 20 marks has been added to those students who scored less than 60.
+
+---------------------------------------------------------------------------------------------------
+3. Function
+-------------
+
+* Function Declaration
+* Function Expression
+* First Class Function 
+* What is IIFE?
+* Closure
+* Function Scope
+* Function Hoisting
+* Params vs. Arguments
+* Spread operator and rest operator
+* Callback
+* Arrow functions
+* Difference between Arrow functions and the normal function
+* this
+
+---------------------------------------------------------------------------------------------------
+4. 
 
 
 
