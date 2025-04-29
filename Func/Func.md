@@ -124,6 +124,7 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
 ---------------------------------------------------------------------------------------------------
 
 Question 5: Function Hoisting
+------------------------------
 Explanation: Function hoisting allows calling a function before it is declared. The code demonstrates hoisting with a function declaration and how it behaves differently from non-hoisted functions.
 
         Without Hoisting:
@@ -181,20 +182,41 @@ Explanation: Function hoisting allows calling a function before it is declared. 
 
         O/p-
         Function Scope undefined
+
         console.log("Global Scope"+" "+x)
         ReferenceError: x is not defined
-----------------------------------------------------------------------------------------------------        
+--------------------------------------------------------------------------------------------------
+        
+        var x = 21;
+        var fun = function () {
+        //local scope        
+        console.log(x);
+        var x = 20;
+        };
+        fun();
+
+        O/p - undefined
+
+When the variable present in the local scope it will not go and check the global scope
+
+--------------------------------------------------------------------------------------------------
+
 Question 6: Params vs. Arguments
+----------------------------------
 Explanation: This code defines a function fn with parameters a, x, y, and a rest parameter numbers, showcasing how parameters are declared and used in functions.
 
 Question 7: Spread operator and rest operator
+-----------------------------------------------
 Explanation: The code shows the usage of the rest parameter in a function declaration and the spread operator to pass an array as individual arguments to the function.
 
 Question 8: Callback
+-----------------------
 Explanation: This code demonstrates a callback function greeting being passed as an argument to the processUserInput function, allowing dynamic behavior based on user input.
 
 Question 9: Arrow functions
+------------------------------
 Explanation: Arrow functions are shown in two forms: one with explicit return and braces, and another with implicit return when the function body is a single expression.
 
 Question 10: this
+-------------------
 Explanation: The code defines an object user with methods rc1 and rc2. rc1 uses an arrow function, resulting in this referring to the global object, while rc2 uses a regular function, allowing this to refer to the object itself.
