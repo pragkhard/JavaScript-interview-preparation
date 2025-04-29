@@ -112,10 +112,10 @@ fun();
 
 // Question 6 :  Params vs arguments
 
-const fn = (a, x, y, ...numbers) => {
+const fn = (a, x, y, ...numbers) => { //Params
   console.log(x, y)
 };
-fn(5, 6, 7, 8);
+fn(5, 6, 7, 8); //arguments
 
 // ========================================================================
 

@@ -205,18 +205,104 @@ Question 6: Params vs. Arguments
 ----------------------------------
 Explanation: This code defines a function fn with parameters a, x, y, and a rest parameter numbers, showcasing how parameters are declared and used in functions.
 
+        const fn = (a, x, y, ...numbers) => { //Params
+        console.log(x, y)
+        };
+        fn(5, 6, 7, 8); //arguments
+
+        O/p - 6 7
+
 Question 7: Spread operator and rest operator
 -----------------------------------------------
 Explanation: The code shows the usage of the rest parameter in a function declaration and the spread operator to pass an array as individual arguments to the function.
+
+        function multiply(...nums) {  // rest operator ,should always be the last one
+        console.log(nums[0] * nums[1]);
+        }
+        var arr = [5, 7];
+        multiply(...arr) // Spread operator
+
+        O/p- 35
+-----------------------------------------------------------------------------------------------------
+
+        const fn = (a, ...numbers,x,y) =>{
+        console.log(x,y)
+        }
+        fn(5,6,3,7)
+
+        O/p - SyntaxError: Rest parameter must be last formal parameter
+
+        
+        const fn = (a,x,y, ...numbers) =>{
+        console.log(x,y)
+        }
+        fn(5,6,3,7)   
+
+        O/p- 6 3    
 
 Question 8: Callback
 -----------------------
 Explanation: This code demonstrates a callback function greeting being passed as an argument to the processUserInput function, allowing dynamic behavior based on user input.
 
+        function greeting(name) {
+        alert('Hello ' + name);
+        }
+
+        function processUserInput(callback) {
+        var name = prompt('Please enter your name.');
+        callback(name);
+        }
+
+        processUserInput(greeting);
+
+greeting is the callback function
+
 Question 9: Arrow functions
 ------------------------------
 Explanation: Arrow functions are shown in two forms: one with explicit return and braces, and another with implicit return when the function body is a single expression.
 
-Question 10: this
+        const add = (firstNum, secondNum) => {
+        return firstNum + secondNum;
+        }
+
+        const addNum = (firstNum, secondNum) => firstNum + secondNum;
+
+Question 10: Difference between Arrow functions and the normal function
+--------------------------------------------------------------------------
+       1. Syntax
+       -----------
+        
+        const square (num) {
+        return num * num;
+        }
+
+        const square = (num) => {
+        return num * num;
+        }
+
+
+        2. Implicit return keyword
+        ----------------------------
+
+        const square = (num) => return num * num;
+
+        3. arguments
+
+        function fn(){
+             console.log(arguments)   
+        }
+        fn()
+       
+        O/p -  [Arguments] { '0': 1, '1': 2, '2': 3 }
+
+         function fn = () =>{
+             console.log(arguments)   
+        }
+        fn(1,2,3)
+
+        O/p- Error
+        
+
+Question 11: this
 -------------------
 Explanation: The code defines an object user with methods rc1 and rc2. rc1 uses an arrow function, resulting in this referring to the global object, while rc2 uses a regular function, allowing this to refer to the object itself.
