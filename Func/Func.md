@@ -66,7 +66,7 @@ In Q-1, the mul function uses the variables num1 and num2 from the global scope.
 In Q-2, the setTimeout function inside a loop creates a closure but uses the global i variable.
 
         Q-1
-        
+
         var num1 = 20,
         num2 = 3,
         name = "Roadsidecoder";
@@ -121,11 +121,69 @@ In Q-2, the setTimeout function inside a loop creates a closure but uses the glo
         2
         3
         4
----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 Question 5: Function Hoisting
 Explanation: Function hoisting allows calling a function before it is declared. The code demonstrates hoisting with a function declaration and how it behaves differently from non-hoisted functions.
 
+        Without Hoisting:
+
+        function functionName() {
+        console.log("work at tech");
+        }
+
+        functionName();         // function is called after declaring it
+----------------------------------------------------------------------------------------------------
+
+        With Hoisting:
+
+        functionName();        // function is called before declaring it
+
+        function functionName() {
+        console.log("work at tech");
+        }
+
+-----------------------------------------------------------------------------------------------------
+        
+        functionName();   
+
+        console.log("Global Scope"+" "+x)
+        function functionName() {
+        console.log("Function Scope"+" "+x)
+        }
+        var x = 21;        
+        
+        O/p-
+        Function Scope undefined
+        Global Scope undefined
+----------------------------------------------------------------------------------------------------
+        
+        functionName();    
+
+        console.log("Global Scope"+" "+x)
+        function functionName() {
+         var x = 21;
+        console.log("Function Scope"+" "+x)
+        }
+        var x = 21
+
+        O/p 
+        Function Scope 21
+        Global Scope undefined
+-----------------------------------------------------------------------------------------------------       
+        functionName();  
+        
+        console.log("Global Scope"+" "+x)
+        function functionName() {
+        console.log("Function Scope"+" "+x)
+         var x = 21;
+        } 
+
+        O/p-
+        Function Scope undefined
+        console.log("Global Scope"+" "+x)
+        ReferenceError: x is not defined
+----------------------------------------------------------------------------------------------------        
 Question 6: Params vs. Arguments
 Explanation: This code defines a function fn with parameters a, x, y, and a rest parameter numbers, showcasing how parameters are declared and used in functions.
 
