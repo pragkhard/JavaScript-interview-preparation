@@ -4,6 +4,7 @@ Generator function
 A generator function handle the async operation, it basically allows to pause and resume its execution. producing multiple values on demand.
 
 yield: Pauses execution and returns a value.
+
 next(): Resumes execution and returns the next yielded value.
 
         function* numberGenerator() {
