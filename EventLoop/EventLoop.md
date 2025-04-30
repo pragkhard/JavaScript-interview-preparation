@@ -1,3 +1,5 @@
+The Event Loop continuously checks the Call Stack and the Callback Queue. If the Call Stack is empty, it pushes tasks from the Callback Queue (such as asynchronous callbacks) into the Call Stack for execution. This allows JavaScript to perform non-blocking operations while handling only one operation at a time in the main thread.
+
 Event Loops:
 =================================================================================================
 Eventloop has one job its only job is to continously monitoring the callstack and callstack queue if the callstack is empty and its seem the function is waiting it just to execute inside the callback queue takes the function and push it inside the call stack and callback method quicky executed.

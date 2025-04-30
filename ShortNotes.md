@@ -1,1 +1,3 @@
-The Event Loop continuously checks the Call Stack and the Callback Queue. If the Call Stack is empty, it pushes tasks from the Callback Queue (such as asynchronous callbacks) into the Call Stack for execution. This allows JavaScript to perform non-blocking operations while handling only one operation at a time in the main thread.
+role and responsibilities -
+----------------------------
+In my current role, I develop functional components using ReactJS and manage state with Redux. I also integrate RESTful APIs into the application and fix bugs. After development, I execute test cases using React Testing Library and Jest, achieving 85% test coverage. Additionally, I handle the deployment process using AWS for hosting the application and Jenkins CI/CD pipelines.
