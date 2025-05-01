@@ -84,9 +84,9 @@ Because of the concern Es6 features get introduced with a block scope. So, with 
 
         O/p - 0 1 2 3 4
 
-if you want to stick with var, you can use an Closer or the IIFE (Immediately Invoked Function Expression) to create a new scope for each iteration:
+if you want to stick with var, you can use an Closures or the IIFE (Immediately Invoked Function Expression) to create a new scope for each iteration:
 
-Closer - 
+Closures - 
 
         for (var i = 0; i < 5; i++) {
         function inner(i) {

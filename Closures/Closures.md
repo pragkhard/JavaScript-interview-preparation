@@ -1,3 +1,68 @@
+What is a Closure in JavaScript?
+===================================
+
+A closure is created when a function is defined inside another function, and the inner function remembers and accesses variables from the outer function’s scope, even after the outer function has finished executing.
+This is useful for data encapsulation, function factories, and preserving state across invocations.
+
+Example:
+----------
+        function outerFunction() {
+        let count = 0;
+        
+        return function innerFunction() {
+            count++;
+            console.log(count);
+        };
+        }
+        
+        const counter = outerFunction();
+        counter(); // 1
+        counter(); // 2
+
+Explanation:
+outerFunction returns innerFunction.
+innerFunction forms a closure and "remembers" the count variable from its parent scope.
+Even though outerFunction has finished execution, counter() still has access to count.
+
+If i call like this way nothing will happen / Not getting output - 
+
+        function outerFunction() {
+            let count = 0;
+            
+            return function innerFunction() {
+                count++;
+                console.log(count);
+            };
+            }
+            
+        outerFunction();
+
+ 
+If you not return the inner function then you do need to call the inner function (inner())
+
+            function outerFunction() {
+                let count = 0;
+                
+                function innerFunction() {
+                    count++;
+                    console.log(count);
+                }
+                
+                innerFunction(); 
+                innerFunction();
+            }
+            outerFunction(); 
+            
+
+Where Closures Are Useful:
+---------------------------
+Creating private variables
+Maintaining state in async code
+In loops and callbacks
+Memoization and function factories
+           
+ 
+
 Question 1: What is Lexical Scope?
 -----------------------------------
 Explanation: Lexical scope refers to how variable names are resolved in nested functions based on where the functions are defined. In the provided code, the function local has a local scope where it can access variables defined within itself as well as variables in the global scope, such as the username variable.
