@@ -18,8 +18,8 @@ Topics -
 
 Difference between Var, Let and Const
 ---------------------------------------
-1 Point
---------
+Point - 1
+-----------
 Variables define with "var" can be redeclared and reasigned. 
 even declare it without providing it any value.
 
@@ -44,7 +44,7 @@ Variable define with "const" can't be redeclared and reassigned.
  If i redeclared it will give Syntax error: `Missing initializer in const declaration` and 
  If i reassigned it will give type error: `Assignment to constant variable error`.
  
-but in case of "const" we need to provide some value. We can not be delared without initializing it otherwise it will give us the Syntax Error: `Missing initiatisch in const declaration`
+but in case of "const" we need to provide some value. We can not be delared without initializing it otherwise it will give us the Syntax Error: `Missing initializer in const declaration`
  
         cost a "Hello";
         cost a = "Pragati"; (Can't)
@@ -53,15 +53,15 @@ but in case of "const" we need to provide some value. We can not be delared with
         cost a; (can't)
         cost a = 5;
 
-2 Point
---------
+Point - 2
+-----------
 
 Variable defne with "var" have global scope or function scope means if the variable declared inside of the block can be accessed outside of the block.
  
 but the variable define with "let" and "const" are the block scope means the variable declared inside of the block can not access outside the block.
 
-3 Point
---------
+Point - 3
+----------
 
 The problem comes with var. 
 Suppose are using var and we have one forloop and inside of the forloop we are updating the i because of var what happened so i will be having the same memory allocation.so it will updating the same value.
@@ -74,8 +74,8 @@ Because of the concern Es6 features get introduced with a block scope. So, with 
           }, 1000);
         }
 
-4 Point
---------
+Point - 4
+-----------
 
 Variable define with "var" can be hoisted and it will give the the output undefined. 
 But in case of "let" and "const" it will give us the "reference error" because it will hosted in the temporal dead zone. 
