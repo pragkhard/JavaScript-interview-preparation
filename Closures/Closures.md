@@ -24,7 +24,27 @@ outerFunction returns innerFunction.
 innerFunction forms a closure and "remembers" the count variable from its parent scope.
 Even though outerFunction has finished execution, counter() still has access to count.
 
+OR 
+===
+
+        function outerFunction() {
+            let count = 0;
+            
+            function innerFunction() {
+                count++;
+                console.log(count);
+            };
+            return innerFunction;
+            }
+            
+            const counter = outerFunction();
+            counter(); // 1
+            counter(); // 2
+
+
+
 If i call like this way nothing will happen / Not getting output - 
+------------------------------------------------------------------
 
         function outerFunction() {
             let count = 0;
@@ -39,6 +59,7 @@ If i call like this way nothing will happen / Not getting output -
 
  
 If you not return the inner function then you do need to call the inner function (inner())
+--------------------------------------------------------------------------------------------
 
             function outerFunction() {
                 let count = 0;
