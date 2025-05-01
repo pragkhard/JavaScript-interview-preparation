@@ -1,4 +1,5 @@
  Reverse string -
+ ------------------
 
         var name = "Hello Pragati, how are you?";
 
