@@ -1,5 +1,88 @@
 Var, Let and Const
 ===========================================================================================
+
+Topics -
+----------
+* Difference between Var, Let and Const
+* Scope
+* Type of Scope
+* Variable Shadowing
+* Illegal Shadowing
+* Declaration
+* Declaration without Initialization
+* Re-Initialization
+* Hoisting
+* Javascript exection context
+* Temporal Dead Zone (TDZ)
+
+
+Difference between Var, Let and Const
+---------------------------------------
+1 Point
+--------
+Variables define with "var" can be redeclared and reasigned. 
+even declare it without providing it any value.
+
+        var a = "Hello";
+        var a = "Pragati";
+        a = "Khard"; 
+
+        var a;
+
+Variables define with "let" can't be redeclared but can be reassigned. 
+If i will redeclared it will give the Syntax error: `Variable has already been declared`.
+but we can declared the variable without providing it any value. 
+
+        let a = "Hello"
+        let a = "Pragati" (Can't)
+        a= "Khard" 
+
+        let a
+ 
+
+Variable define with "const" can't be redeclared and reassigned.
+ If i redeclared it will give Syntax error: `Missing initializer in const declaration` and 
+ If i reassigned it will give type error: `Assignment to constant variable error`.
+ 
+but in case of "const" we need to provide some value. We can not be delared without initializing it otherwise it will give us the Syntax Error: `Missing initiatisch in const declaration`
+ 
+        cost a "Hello";
+        cost a = "Pragati"; (Can't)
+        a = "Khard"; (Can't)
+
+        cost a; (can't)
+        cost a = 5;
+
+2 Point
+--------
+
+Variable defne with "var" have global scope or function scope means if the variable declared inside of the block can be accessed outside of the block.
+ 
+but the variable define with "let" and "const" are the block scope means the variable declared inside of the block can not access outside the block.
+
+3 Point
+--------
+
+The problem comes with var. 
+Suppose are using var and we have one forloop and inside of the forloop we are updating the i because of var what happened so i will be having the same memory allocation.so it will updating the same value.
+ 
+Because of the concern Es6 features get introduced with a block scope. So, with the block scope everytime loops runs, it creates another block scope for this function / It will be a seperate momory allocation.
+
+        for (var i = 0; i < 5; i++) {
+          setTimeout(function() {
+            console.log(i);
+          }, 1000);
+        }
+
+4 Point
+--------
+
+Variable define with "var" can be hoisted and it will give the the output undefined. 
+But in case of "let" and "const" it will give us the "reference error" because it will hosted in the temporal dead zone. 
+
+TDZ is basically a time blw the `declaration` and `initillization`. Bascially if we see in the development tool we can see variable declared with "var" attached to the "Global scope" and variable declared with "let" and "const" will be in the seperate "script block" which is reside in the tdz. The Variable is the TDZ it will give the "reference error".
+
+
 Variable Shadowing:
 -------------------
 In JavaScript, variable shadowing occurs when a variable with the same name as a variable in a higher scope is declared in a lower scope.
