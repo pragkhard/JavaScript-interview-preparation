@@ -74,6 +74,17 @@ Because of the concern Es6 features get introduced with a block scope. So, with 
           }, 1000);
         }
 
+Resolve the issue by using closer -
+
+        for (var i = 0; i < 5; i++) {
+        function inner(i) {
+            setTimeout(function () {
+            console.log(i);
+            }, 1000);
+        }
+        inner(i)
+        }
+
 Point - 4
 -----------
 
