@@ -41,7 +41,7 @@ OR
             counter(); // 1
             counter(); // 2
 
-
+Purpose: Returns innerFunction so you can call it later.
 
 If i call like this way nothing will happen / Not getting output - 
 ------------------------------------------------------------------
@@ -73,7 +73,8 @@ If you not return the inner function then you do need to call the inner function
                 innerFunction();
             }
             outerFunction(); 
-            
+
+Purpose: Calls innerFunction twice immediately within outerFunction.
 
 Where Closures Are Useful:
 ---------------------------
