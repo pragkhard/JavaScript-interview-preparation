@@ -74,7 +74,19 @@ Because of the concern Es6 features get introduced with a block scope. So, with 
           }, 1000);
         }
 
-Resolve the issue by using closer -
+        O/p - 5 5 5 5 5 5
+
+        for (let i = 0; i < 5; i++) {
+          setTimeout(function() {
+            console.log(i);
+          }, 1000);
+        }
+
+        O/p - 0 1 2 3 4
+
+if you want to stick with var, you can use an Closer or the IIFE (Immediately Invoked Function Expression) to create a new scope for each iteration:
+
+Closer - 
 
         for (var i = 0; i < 5; i++) {
         function inner(i) {
@@ -84,6 +96,21 @@ Resolve the issue by using closer -
         }
         inner(i)
         }
+
+        O/p - 0 1 2 3 4
+
+IIFE -
+
+        for (var i = 0; i < 5; i++) {
+          (function(i) {
+            setTimeout(function() {
+              console.log(i);
+            }, 1000);
+          })(i);
+        }
+        
+        O/p - 0 1 2 3 4
+
 
 Point - 4
 -----------
