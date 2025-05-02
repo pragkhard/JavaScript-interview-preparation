@@ -214,4 +214,25 @@ Q6 - print the total marks of the students with marks greater than 60 after 20
 Question 7: map vs foreach
 ----------------------------
 Map does not modify the original array it will return the new array
-Foreach does not return the new array , but if you want to modify the original array we want to take the index otherwise it will return undefine        
+Foreach does not return the new array , but if you want to modify the original array we want to take the index otherwise it will return undefine      
+
+        const numbers = [1, 2, 3];
+
+        const result = numbers.forEach((num) => {
+        return num * 2;
+        });
+
+        console.log(result); // undefined ❌
+
+
+solution
+
+        const numbers = [1, 2, 3];
+
+        numbers.forEach((num, index, arr) => {
+        arr[index] = num * 2;  //2, 4, 6 
+        // OR 
+        num[index] = num * 2 // 1,2,3
+        });
+
+        console.log(numbers); 
