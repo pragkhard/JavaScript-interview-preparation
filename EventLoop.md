@@ -15,9 +15,9 @@ Order of exection is :
 console.log("start")
 This is a synchronous statement.It gets executed immediately and prints: start
 
-setTimeout(function(){
-    console.log("setTimeout")
-},1000)
+        setTimeout(function(){
+            console.log("setTimeout")
+        },1000)
 setTimeout is an asynchronous function.It is handled by the Web APIs(provided by the browse) with a 1000ms timer but doesn’t execute yet
 Callstack will not wait anything it will print whatever comes inside it 
 
@@ -25,14 +25,14 @@ console.log("end")
 
 =====================================================================================================
 
-console.log("start")
-setTimeout(function () {
-    console.log("setTimeout")
-}, 1000)
+        console.log("start")
+        setTimeout(function () {
+            console.log("setTimeout")
+        }, 1000)
 
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-    .then(response => response.json())
-    .then(data => console.log("fetch data received"));
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+            .then(response => response.json())
+            .then(data => console.log("fetch data received"));
 
 The network request is sent asynchronously. The .then(...) callback is stored in the Microtask Queue
 Once the API response is received, the fetch .then() callback moves from the Microtask Queue to the Call Stack.
@@ -44,22 +44,22 @@ console.log("end")
 
 =====================================================================================================
 
-console.log("start")
-setTimeout(function () {
-    console.log("setTimeout")
-}, 1000)
+        console.log("start")
+        setTimeout(function () {
+            console.log("setTimeout")
+        }, 1000)
 
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-    .then(response => response.json())
-    .then(data => console.log("fetch data received"));
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+            .then(response => response.json())
+            .then(data => console.log("fetch data received"));
 
-Promise.resolve().then(() => console.log("promise resolve"))
+        Promise.resolve().then(() => console.log("promise resolve"))
 
-console.log("end")
+        console.log("end")
 
-O/p-
-start
-end
-promise resolve
-fetch data received
-setTimeout
+        O/p-
+        start
+        end
+        promise resolve
+        fetch data received
+        setTimeout
