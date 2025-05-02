@@ -64,6 +64,11 @@ https://www.youtube.com/@Turingcom/playlists
 theSeniorDev
 https://www.youtube.com/@therealseniordev/playlists
 
+Interview Adda
+https://www.youtube.com/@InterviewAddaOffical/playlists
+
+Geeky Gopal
+https://www.youtube.com/@GeekyGopal/playlists
 
 Courses
 ====================
