@@ -14,7 +14,8 @@ Topics
     4. Sum total of the marks of the students
     5. Get only the names of the students who scored more than 60 marks
     6. print the total marks of the students with marks greater than 60 after 20 marks has been added to those students who scored less than 60.
-    
+* Difference between map vs foreach    
+
 
 Map-Filter-Reduce - Array methods that used to iterate over an array
 ------------------------------------------------------------------------
