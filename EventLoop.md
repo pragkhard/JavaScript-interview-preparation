@@ -42,7 +42,7 @@ After 1 second, the setTimeout callback moves from the Macrotask Queue to the Ca
 
 console.log("end")
 
-=====================================================================================================
+-----------------------------------------------------------------------------------------------------
 
         console.log("start")
         setTimeout(function () {
