@@ -1,3 +1,7 @@
+DOM (Document Object Model) 
+-----------------------------
+DOM is a tree like structure and it has different nodes and elements.
+
 What is Babel? 🚀
 ===================================================================================
 Babel is a JavaScript compiler that helps convert modern JavaScript (ES6+) code into older versions (ES5) so that it can run in older browsers that don’t support new features.
