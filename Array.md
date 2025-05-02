@@ -10,6 +10,7 @@ filter() – Returns elements that pass a test.
 reduce() – Reduces array to a single value.
 ------------------------------------------------------
 reduceRight() – Like reduce(), but from right to left.
+------------------------------------------------------
 
 🔍 Searching & Testing
 ===========================
@@ -26,6 +27,7 @@ includes() – Checks if a value exists.
 some() – Checks if any element passes a test.
 ------------------------------------------------------
 every() – Checks if all elements pass a test.
+------------------------------------------------------
 
 🔄 Modification
 ======================
@@ -47,6 +49,7 @@ reverse() – Reverses the array.
 fill() – Fills array with a static value.y
 ------------------------------------------------------
 copyWithin() – Copies part of the array within itself.
+------------------------------------------------------
 
 🧩 Creation & Conversion
 =============================
@@ -62,6 +65,7 @@ flatMap() – Maps and flattens in one step.
 Array.from() – Converts iterable to array.
 ------------------------------------------------------
 Array.of() – Creates array from arguments.
+------------------------------------------------------
 
 🧪 Utility
 ===================
@@ -79,3 +83,4 @@ entries() – Returns an iterator of key-value pairs.
 at() – Returns element at a given index (supports negative indexing).
 ------------------------------------------------------
 with() – Returns a copy of the array with one element replaced (immutable, ES2023).
+------------------------------------------------------
