@@ -17,7 +17,7 @@ Since the types are different, 0 === false → ❌ false
 
 -----------------------------------------------------------------------------------------------------
 
-I/p let arr = [1,3,12,19,24,29,33]
+I/p let arr = [1,3,12,19,24,29,33], 
 0/p let arr = [1,9,361,841,1089]
 
 * Selecting only odd numbers from the array.
