@@ -1,3 +1,5 @@
+String -
+==========
  Reverse string -
  ------------------
 
@@ -9,3 +11,6 @@
         console.log(reversedWord )
 
 In summary, split('') treats spaces as characters and reverses them along with the rest of the string, while split(' ') uses spaces to separate words and reverses the order of the words without affecting the spaces
+
+Array -
+=========
