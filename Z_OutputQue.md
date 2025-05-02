@@ -26,5 +26,5 @@ I/p let arr = [1,3,12,19,24,29,33],
         const result = arr.filter(num => num % 2 !== 0).map((num)=>num*num )
         console.log(result)
 
-✅ !== → Correct. Means "not equal" and checks both value and type.
-❌ ! == → Wrong. It's invalid syntax and will cause an error.
+* ✅ !== → Correct. Means "not equal" and checks both value and type.
+* ❌ ! == → Wrong. It's invalid syntax and will cause an error.
