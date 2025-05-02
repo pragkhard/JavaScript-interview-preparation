@@ -1,7 +1,7 @@
 The Event Loop continuously checks the Call Stack and the Callback Queue. If the Call Stack is empty, it pushes tasks from the Callback Queue (such as asynchronous callbacks) into the Call Stack for execution. This allows JavaScript to perform non-blocking operations while handling only one operation at a time in the main thread.
 
 Event Loops:
-=================================================================================================
+--------------------------------------------------------------------------------------------------
 Eventloop has one job its only job is to continously monitoring the callstack and callstack queue if the callstack is empty and its seem the function is waiting it just to execute inside the callback queue takes the function and push it inside the call stack and callback method quicky executed.
 
 JS is the synchronous single thread lang. 
@@ -11,7 +11,7 @@ Call stack present inside the JS engine and all the code executed inside the cal
 Whenever any JS program is run a global context is created and GEC pused inside the callstack and then JS code will run line by line over global context.
 
 Order of exection is :
-=====================================================================================================
+---------------------------------------------------------------------------------------------------
 console.log("start")
 This is a synchronous statement.It gets executed immediately and prints: start
 
@@ -23,7 +23,7 @@ Callstack will not wait anything it will print whatever comes inside it
 
 console.log("end")
 
-=====================================================================================================
+---------------------------------------------------------------------------------------------------
 
         console.log("start")
         setTimeout(function () {
