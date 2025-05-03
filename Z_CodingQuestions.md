@@ -19,5 +19,17 @@ Remove duplicate characters from the string -
         var uniqueChars = [...new Set(name)].join('');
         console.log(uniqueChars);
 
+OR
+---
+
+        var name = "Hello Pragati, how are you?";
+        var unique = name.split('').filter((char, index, arr) => arr.indexOf(char) === index)
+        .join('');
+
+        console.log(unique);
+
+* arr.indexOf(char) gives the first position of that character.
+* If the current position index is the same, it means it's the first time — so we keep it.
+
 Array -
 =========
