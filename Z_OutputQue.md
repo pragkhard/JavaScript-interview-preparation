@@ -1,8 +1,8 @@
 Diff == and === operator
 ----------------------------
 Both are compare the operator
-==	->      compares value only.
-===     ->      compare value and type.
+* ==	->      compares value only.
+* ===     ->      compare value and type.
 	
 -------------------------------------------
 
