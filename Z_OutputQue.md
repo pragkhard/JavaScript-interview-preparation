@@ -1,3 +1,10 @@
+Diff == and === operator
+----------------------------
+Both are compare the operator
+==	->      compares value only.
+===     ->      compare value and type.
+	
+-------------------------------------------
 
         console.log(0 == false)
         console.log(0 === false)
