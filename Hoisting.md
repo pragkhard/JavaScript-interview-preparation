@@ -103,4 +103,13 @@ With "Const"-
             o/p- Uncaught ReferenceError: a is not defined
 
 
+What is call stack in JS?
+--------------------------------
+* Call stack maintains the order of execution of execution contexts.
+* It also known as – Execution context stack, program stack, control stack, runtime stack, machine stack.
+* Its also follow LIFO (last in , first out) structure, which is used to store all the execution context created during the code execution.
+* By Default JS engin/browser created Global execution content but when we call the code/Whenever function is invoke/ Function is executed, New execution context is created.
+
+
+
 
