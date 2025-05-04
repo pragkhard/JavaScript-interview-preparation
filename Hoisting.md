@@ -103,6 +103,24 @@ With "Const"-
             o/p- Uncaught ReferenceError: a is not defined
 
 
+How JavaScript works and how the code is executed?
+----------------------------------------------------
+Everything in JavaScript happens inside an “Execution context”.
+Execution context- its like a big box or we can say that the environment in which our code is expected and evaluated.
+
+It has two components-
+
+* Memory component – All the variables, function and parameter are stored as a key value pair. Memory component also known as “variable environment”.
+
+* Code component- This is the place where code is executed one line at the time and assigning the values to the variable and execute the function calls. Also when function invoke JS engine created the new execution context. It is also known as the “Thread of execution.”
+
+        Memory	                                                    Code
+        Key: value
+        a:10
+        fn: {
+            }
+	
+
 What is call stack in JS?
 --------------------------------
 * Call stack maintains the order of execution of execution contexts.
