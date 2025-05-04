@@ -21,3 +21,24 @@ apply works like call but takes arguments as an array.
         objone.printf.apply(objtwo, ["niwari", "india"])
         let fun = objone.printf.bind(objtwo, "niwari", "india")
         console.log(fun())
+
+
+Difference between Call, Appy and Bind in JS?   
+-----------------------------------------------
+Call
+------		
+* call() method, you can write a method that can be used on different objects.
+* The call() method takes arguments separately.	
+
+Appy
+-----
+* The apply() method, you can write a method that can be used on different objects.
+  The apply() method is similar to the call() method.	
+
+* The apply() method takes arguments as an array.	
+
+Bind
+-----
+* Bind () same as like the call () only diff is it will not directly call it will make the copy and whenever is needed it will call.
+
+	
