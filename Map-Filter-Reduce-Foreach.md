@@ -229,6 +229,7 @@ Question 7: map vs foreach
 
 
 solution
+---------
 
         const numbers = [1, 2, 3];
 
