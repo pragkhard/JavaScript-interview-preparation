@@ -11,13 +11,14 @@ If I declare the variable and if I try to console.log before it was declared. We
 Variable Hoisting-
 --------------------
 With-
+------
             console.log(a);
             var a =10;
 
             o/p- undefined	
 
 Without-
-
+--------
             var a =10;
             console.log(a);
 
@@ -26,6 +27,7 @@ Without-
 Function Hoisting-
 -------------------
 With-
+------
             sum(5,4);
             function sum(a,b){
                 add = a+b;
@@ -33,7 +35,7 @@ With-
             }
 
 Without- 
-
+--------
             function sum(a,b){
                 add = a+b;
                 console.log(add);
@@ -43,6 +45,7 @@ Without-
 Hoisting is not working in Function expression.
 ------------------------------------------------
 With-
+------
             sum(4,4);
             var sum = function(a,b){
                 add = a*b;
@@ -51,6 +54,7 @@ With-
             o/p- Uncaught TypeError: sum is not a function
 
 Without-
+--------
             var sum = function(a,b){
                 add = a*b;
                 console.log(add);
@@ -63,14 +67,16 @@ Without-
 Hoisting is not working in Arrow Function.
 ------------------------------------------
 With- 
+------
             sum(3,5);
             var sum = (a,b)=>{
                 add = a*b;
                 console.log(add);
             }
             o/p- Uncaught TypeError: sum is not a function
-            
-Without-            
+
+Without-
+---------            
             var sum = (a,b)=>{
                 add = a*b;
                 console.log(add);
@@ -83,13 +89,14 @@ Without-
 Hoisting is not working in let and const.
 --------------------------------------------
 With "let"-
+-----------
             console.log(a);
             let a =10;
 
             o/p- Uncaught ReferenceError: a is not defined	
 
 With "Const"-
-
+-------------
             console.log(a);
             const a =10;
 
