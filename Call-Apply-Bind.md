@@ -6,7 +6,7 @@ apply -
 apply works like call but takes arguments as an array.
 
         const objone = {
-            name: 'suneeta',
+            name: 'Pragati',
             age: 48,
             printf: function (state, country) {
                 console.log(this.name + " " + state + " " + country)
