@@ -102,6 +102,33 @@ With "Const"-
 
             o/p- Uncaught ReferenceError: a is not defined
 
+What is temporal dead zone?
+-----------------------------
+* "Let" and "const" is also hosted but It will hosted in the temporal dead zone.
+* Temporal dead zone(TDZ) is the time since when the ‘let and ‘const’ variable hoisted till initialize some value that time between that known as the Temporal dead zone(TDZ).
+* From hoisting till it assigned or it get some value/ Initialize some value that phase know as the temporal dead zone. 
+* Temporal dead zone(TDZ) is the time between the deceleration and the initialization of let and const variable.
+* In other words we can say that it is the mechanism where variable and function declaration moved to the top of their scope before the code execution.
+
+            console.log(a)
+            console.log(b)
+            let a = 10;
+            var b = 20;
+            O/p - ReferenceError: Cannot access 'a' before initialization
+
+Are let and const declaration hoisted?
+-----------------------------------------
+So, whenever you try to access a variable inside the temporal dead zone it gives you the ‘reference error’. They can only be access once some value initialize to them.
+Best way to avoid temporal dead zone is always put declaration and initialization on the top of the scope. 
+
+            Script
+                a: undefined
+            Global
+            alert: f alert()
+            atob: f atob()
+            b: undefined
+
+“a” is attached to the global object but incase of ‘let and ‘const’ they are allocate memory but they are stored in different / separate memory space and you can not access memory space before you have put some value in them.
 
 How JavaScript works and how the code is executed?
 ----------------------------------------------------
