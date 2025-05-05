@@ -140,6 +140,7 @@ What is block in JS?
 ----------------------
 * Block is defined by these curly braces.
                 {
+
                 }
 * Block is also known a compound statements.
 * Block is used to combine multiple JS statement into one group. So, that we can use it where JS expects one statement. OR
@@ -197,7 +198,9 @@ In first example, let a inside the if block shadows the outer let a, and they ar
 
          O/P - Hi Hello
 
- But in place of "let, const" if we will use "var" it will not overlap
+Inner a is shadow the outer a. It will overlap the value but still it just going to be only accessible inside the block outside the block a sill be “hello”. Shadowing a variable, it should not cross the boundary of scope that is we can shadow var variable by using let but cannot do the opposite so if we shadow let variable by var variable is know as illegal shadowing and it give us the error that the variable is already defined. 
+
+But in place of "let, const" if we will use "var" it will not overlap
 
         function test() {
             var a = "Hello";
@@ -339,3 +342,7 @@ TDZ is the time between the declaration and the initilization of let and const v
             console.log(a, b);
             const c = 30;
             let b = 20;
+
+
+Exercise - 
+--------
