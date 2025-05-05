@@ -175,8 +175,6 @@ Example-
 * In short let and const is the block scope (it can be accessible inside the block) and var is the functional scope.
 
 
-
-
 Variable Shadowing:
 -------------------
 In JavaScript, variable shadowing occurs when a variable with the same name as a variable in a higher scope is declared in a lower scope.
@@ -270,6 +268,60 @@ One more example -
 
         O/p - SyntaxError: Identifier 'b' has already been declared
 
+Others Example - 
+----------------
+Example - 1 (Shadowing in Variable-)
+---------------
+
+        var a = 100;
+        {
+          var a = 10;
+          let b = 20
+          const c = 30;
+  
+          console.log(a)
+          console.log(b)
+          console.log(c)
+        }
+        console.log(a)
+       
+        O/p - 10 20 30 10
+
+Developer tools - 
+
+        Block
+          b: undefined
+          c: undefined
+        Global
+          a:100 then 10
+        Inner var a = 10; is shadow and it is also modify the outer variable value.
+        But the both variable referring to the same memory space that is ‘Global Space’.
+
+Example - 2
+------------
+        let b = 100;
+        {
+          var a = 10;
+          let b = 20
+          const c = 30;
+  
+          console.log(a)
+          console.log(b)
+          console.log(c)
+        }
+        console.log(b)
+
+        O/p - 10 20 30 100
+
+Developer tools -  
+        Block
+          b:20
+          c:30
+        Script
+          b:100
+          Global
+          a:10
+
 Declaration
 --------------
 We can redeclared "var" but can't be redeclared "let" and "const" in the same scope
@@ -342,7 +394,3 @@ TDZ is the time between the declaration and the initilization of let and const v
             console.log(a, b);
             const c = 30;
             let b = 20;
-
-
-Exercise - 
---------
