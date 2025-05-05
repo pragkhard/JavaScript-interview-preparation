@@ -4,6 +4,10 @@ What is a Closure in JavaScript?
 A closure is created when a function is defined inside another function, and the inner function remembers and accesses variables from the outer function’s scope, even after the outer function has finished executing.
 This is useful for data encapsulation, function factories, and preserving state across invocations.
 
+In other words-
+* Closers in action that is inner function can have access to outer function variable as well as all the global variables.
+* Closers is the combination of the function. Its bind together with the lexical scope.
+
 Example:
 ----------
         function outerFunction() {
