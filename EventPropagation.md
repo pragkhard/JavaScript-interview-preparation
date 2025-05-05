@@ -92,3 +92,26 @@ The preventDefault() method stops the default action of a selected element from 
 Example-
 * It prevents a link from following the URL so that the browser can't go another page.
 * It prevents a submit button from submitting a form.
+
+index.html
+----------
+        <body>
+            <a href="home.html">click here</a>
+        </body>
+
+script.js-
+---------
+        let a = document.querySelector('a');
+
+        a.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log('button');
+        });
+
+-------------------------------------------------------------------------------------------------
+Event Deligation -
+-------------------
+Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object.
+
+
+
