@@ -56,7 +56,7 @@ but in case of "const" we need to provide some value. We can not be delared with
 Point - 2
 -----------
 
-Variable defne with "var" have global scope or function scope means if the variable declared inside of the block can be accessed outside of the block.
+Variable defne with "var" have global scope or function scope means if the variable declared inside of the block {} can be accessed outside of the block.
  
 but the variable define with "let" and "const" are the block scope means the variable declared inside of the block can not access outside the block.
 
@@ -120,6 +120,13 @@ But in case of "let" and "const" it will give us the "reference error" because i
 
 TDZ is basically a time blw the `declaration` and `initillization`. Bascially if we see in the development tool we can see variable declared with "var" attached to the "Global scope" and variable declared with "let" and "const" will be in the seperate "script block" which is reside in the tdz. The Variable is the TDZ it will give the "reference error".
 
+Point - 5
+-----------
+* "var" and "let" are the mutable variable.
+Mutable variable are the variables whose values is changed any number of the time.
+
+* "const" are the immutable variable
+Immutable variable are the variables whose values is never changed in the complete life cycle of the program.
 
 Variable Shadowing:
 -------------------
