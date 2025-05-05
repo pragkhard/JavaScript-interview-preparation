@@ -65,7 +65,7 @@ Problem Statement-
         }
         userdetails2.printDetails();
 
-Call -
+Solution -
 ------
         let userdetails = {
         name: "Pragati",
@@ -83,7 +83,7 @@ Call -
         Age: 27,
         Designation: "Software Engineer"
         }
-        
+
         // function borrowing 
         // Call 
         printDetails.call(userdetails2, "Delhi", "India");
