@@ -112,3 +112,8 @@ Immediate function invocation(IIF)-
         O/p - The "callback" argument must be of type function. Received undefined
 
 ---------------------------------------------------------------------------------------------------
+
+
+JavaScript Visualizer 9000 (Real Example we can see on this site)
+
+First going to be console.log(a). We have setTimeout  and setTimeout  is not the part of JS . This is the part of web API  this the part of our browser. setTimeout  will runs when the complete code inside our js file has ran successfully .Even the time inside the setTimeout  0 seconds still it going to run at the very last. So this will go inside of our task queue(call stack queue). promises.resolve it will run also very last of our program. After our complete code inside of our JS has ran but this won’t go inside of our task queue(call stack n    queue) it’s gonna go inside of our micro task queue or the priority queue which again .After that we have console.log(b). Then we will have the output of b. Since  micro task queue or the priority queue has the highest priority than the call stack queue. So this will run first and this will give the output of pro then the output of set.
