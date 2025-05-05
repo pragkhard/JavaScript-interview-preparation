@@ -41,4 +41,63 @@ Bind
 -----
 * Bind () same as like the call () only diff is it will not directly call it will make the copy and whenever is needed it will call.
 
+Problem Statement-
+-------------------
+
+        let userdetails = {
+        name: "Pragati",
+        Age: 26,
+        Designation: "Software Engineer",
+        printDetails: function () {
+            console.log(this);
+        }
+        }
+        userdetails.printDetails();
+
+        let userdetails2 = {
+        name: "Shubhi",
+        Age: 27,
+        Designation: "Software Engineer"
+        // It is not the right way for calling the function again 
+        printDetails: function () {
+            console.log(this.name);
+        }
+        }
+        userdetails2.printDetails();
+
+Call -
+------
+        let userdetails = {
+        name: "Pragati",
+        Age: 26,
+        Designation: "Software Engineer",
+
+        }
+        let printDetails = function () {
+        console.log(this.name);
+        }
+        printDetails.call(userdetails);
+
+        let userdetails2 = {
+        name: "Shubhi",
+        Age: 27,
+        Designation: "Software Engineer"
+        }
+        
+        // function borrowing 
+        // Call 
+        printDetails.call(userdetails2, "Delhi", "India");
+        // Apply 
+        printDetails.apply(userdetails2, ["Delhi", "India"]);
+        // Bind 
+        let newfun = printDetails.bind(userdetails, "Delhi", "India");
+        console.log(newfun());
+        newfun();
+
+
+
+
+
+
+
 	
