@@ -156,5 +156,25 @@ What is call stack in JS?
 * By Default JS engin/browser created Global execution content but when we call the code/Whenever function is invoke/ Function is executed, New execution context is created.
 
 
+Diff between undefined and Null?
+-----------------------------------
+
+Shortest JavaScript Program i.e., Empty file 
+-----------------------------------
+
+What is window in JS?
+-----------------------------------
+
+Difference between undefined and not define?
+-----------------------------------
+
+JS is loosely typed language or weakly typed lang?
+-----------------------------------
+
+Scope Chain?
+-----------------------------------
+
+
+
 
 
