@@ -17,6 +17,8 @@ Methods & Description -
         entries()	    -        Returns an Iterator with the [value,value] pairs from a Set
 
 -------------------------------------------------------------------------
+Creates a new Set -
+---------------------
         const mySet = new Set();
         console.log('The set looks like:', mySet);
 
