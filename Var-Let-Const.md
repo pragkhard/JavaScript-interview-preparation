@@ -6,6 +6,7 @@ Topics -
 * Difference between Var, Let and Const
 * Scope
 * Type of Scope
+* Block & Block Scope
 * Variable Shadowing
 * Illegal Shadowing
 * Declaration
@@ -41,8 +42,8 @@ but we can declared the variable without providing it any value.
  
 
 Variable define with "const" can't be redeclared and reassigned.
- If i redeclared it will give Syntax error: `Missing initializer in const declaration` and 
- If i reassigned it will give type error: `Assignment to constant variable error`.
+If i redeclared it will give Syntax error: `Missing initializer in const declaration` and 
+If i reassigned it will give type error: `Assignment to constant variable error`.
  
 but in case of "const" we need to provide some value. We can not be delared without initializing it otherwise it will give us the Syntax Error: `Missing initializer in const declaration`
  
@@ -127,6 +128,53 @@ Mutable variable are the variables whose values is changed any number of the tim
 
 * "const" are the immutable variable
 Immutable variable are the variables whose values is never changed in the complete life cycle of the program.
+
+What is scope and How many types of scope in JS?
+-----------------------------------------------------
+Scope is the certain region of the program where a defined variable exist and can be recognized and beyond that it can not be recognized. There can be multiple type of scopes-
+        1.	Global scope- without any block and any function its a global scope.
+        2.	Block scope - {  }
+        3.	Functional scope - function (){ }
+
+What is block in JS?
+----------------------
+* Block is defined by these curly braces.
+                {
+                }
+* Block is also known a compound statements.
+* Block is used to combine multiple JS statement into one group. So, that we can use it where JS expects one statement. OR
+
+                if (){
+                //compound statements
+                var a = 10;
+                console.log(a);
+                }
+
+* Wrapping up of the multiple statement group together so that we can use it in a place where JS expects one statement.
+
+What is Block Scope in JS?
+--------------------------
+* Block scope means what all the variables and functions we can access inside that block that is know as block scope.
+Example-  
+                {
+                var a = 10;
+                Let b = 20;
+                const c = 30;
+                }
+
+                Block
+                b: undefined
+                c: undefined
+                Global
+                a: undefined
+
+* Block scope is a separate memory space or we can say ‘let’ and ‘const’ hosted in a separate memory space that reversed for this ‘block’.
+* You can not access ‘let’ and ‘const’ outside the block that is know as ‘let’ and ‘const’ in ‘Block Scope’.
+* Whereas you can access ‘var’ even outside the because ‘var’ is in the ‘Global scope’.
+* In short let and const is the block scope (it can be accessible inside the block) and var is the functional scope.
+
+
+
 
 Variable Shadowing:
 -------------------
