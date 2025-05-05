@@ -139,17 +139,17 @@ Scope is the certain region of the program where a defined variable exist and ca
 What is block in JS?
 ----------------------
 * Block is defined by these curly braces.
-                {
+        {
 
-                }
+        }
 * Block is also known a compound statements.
 * Block is used to combine multiple JS statement into one group. So, that we can use it where JS expects one statement. OR
 
-                if (){
-                //compound statements
-                var a = 10;
-                console.log(a);
-                }
+        if (){
+        //compound statements
+        var a = 10;
+        console.log(a);
+        }
 
 * Wrapping up of the multiple statement group together so that we can use it in a place where JS expects one statement.
 
@@ -157,17 +157,17 @@ What is Block Scope in JS?
 --------------------------
 * Block scope means what all the variables and functions we can access inside that block that is know as block scope.
 Example-  
-                {
-                var a = 10;
-                Let b = 20;
-                const c = 30;
-                }
-
-                Block
-                b: undefined
-                c: undefined
-                Global
-                a: undefined
+        {
+        var a = 10;
+        Let b = 20;
+        const c = 30;
+        }
+        
+        Block
+        b: undefined
+        c: undefined
+        Global
+        a: undefined
 
 * Block scope is a separate memory space or we can say ‘let’ and ‘const’ hosted in a separate memory space that reversed for this ‘block’.
 * You can not access ‘let’ and ‘const’ outside the block that is know as ‘let’ and ‘const’ in ‘Block Scope’.
@@ -321,6 +321,18 @@ Developer tools -
           b:100
           Global
           a:10
+
+Example - 3
+------------
+        var c = 100;
+        function x(){
+        var c = 30;
+        console.log(c)
+        }
+        x()
+        console.log(c)
+
+        O/p - 30 100
 
 Declaration
 --------------
