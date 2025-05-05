@@ -267,6 +267,48 @@ Explanation: Arrow functions are shown in two forms: one with explicit return an
 
         const addNum = (firstNum, secondNum) => firstNum + secondNum;
 
+* Arrow function also called the “fat arrow function”.
+* It Basically introduced the new way of writing the concise function or we can say that it will simplify the function or it is a shorter way to writing the function.
+
+Basic function-
+----------------
+        Function hello(){
+        Return Hello word;
+        }
+        OR
+        Hello = function(){
+        Return Hello word;
+        }
+
+Arrow function syntax-
+----------------------
+
+        hello=()=>{
+        return "Hello word";
+        }
+        hello();
+
+        o/p- 'Hello word'
+        ----------------------
+
+        hello=()=>"Hello word"
+        hello();
+
+        o/p-'Hello word'
+        -----------------------
+
+        hello=(val)=>"Hello"+val;
+        hello("Pragati");
+
+        o/p-'HelloPragati';
+        ------------------------
+
+        hello=val=>"Hello"+val;
+        hello("Pragati");
+
+        o/p-'HelloPragati';
+
+
 Question 10: Difference between Arrow functions and the normal function
 --------------------------------------------------------------------------
        1. Syntax
