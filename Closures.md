@@ -210,6 +210,7 @@ Without closers -
             
 
 Closers- 
+
             function sum(a) {
                     return function (b) {
                         return function (c) {
