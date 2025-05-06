@@ -4,10 +4,6 @@ What is a Closure in JavaScript?
 A closure is created when a function is defined inside another function, and the inner function remembers and accesses variables from the outer function’s scope, even after the outer function has finished executing.
 This is useful for data encapsulation, function factories, and preserving state across invocations.
 
-In other words-
-* Closers in action that is inner function can have access to outer function variable as well as all the global variables.
-* Closers is the combination of the function. Its bind together with the lexical scope.
-
 Example:
 ----------
         function outerFunction() {
@@ -136,3 +132,98 @@ Explanation: The myMemoize function is a memoization polyfill that caches functi
 Question 12: Differentiate between Closure and Scope.
 ----------------------------------------------------------
 Explanation: Closure refers to a function's ability to retain access to variables from its lexical scope even after that scope has closed, while scope refers to the visibility and accessibility of variables within a specific context, such as global scope, function scope, or block scope.
+
+----------------------------------------------------------------------------------------------------
+
+In other words-
+------------------
+
+* Closers in action that is inner function can have access to outer function variable as well as all the global variables.
+* Closers is the combination of the function. Its bind together with the lexical scope.
+
+Suppose we have nested function.
+-------------------------------
+
+        Function outer(){
+            Function inner(){
+        //so this inner function access to the outer function.
+        }
+        }
+
+Example - 
+Simply we can access the value 
+
+        function x() {
+            var a = 7;
+            function y() {
+                console.log(a);
+            }
+            y();
+        }
+        x();
+
+        O/p -7
+
+Using closers -
+
+        function x() {
+                var a = 7;
+                function y() {
+                    console.log(a);
+                }
+                return y;
+            }
+            var z = x();
+            console.log(z);
+            z();
+        
+        O/p - [Function: y]
+              7   
+
+
+Data Hiding, Data Privacy and Encapsulation we can achieve by closers.
+
+Without closers - 
+
+        var sum = function (a) {
+                var c = 5;
+                return function (b) {
+                    return a + b + c;
+                }
+            }
+            var res = sum(2);
+            console.log(res(5));
+
+            O/p- 12
+
+
+        var sum = function (a) {
+                var c = 5;
+                return function (b) {
+                    return a + b + c;
+                }
+            }
+            var res = sum(2);
+            console.log(res(5));
+
+        O/p- 12
+            
+
+Closers- 
+            function sum(a) {
+                    return function (b) {
+                        return function (c) {
+                            console.log(a + b + c);
+                        }
+                    }
+                }
+                var res = sum(2);
+                var data = res(3);
+                var data1 = data(4);
+                console.log(data1);        
+
+                O/p- 9
+                    undefined
+
+
+       
