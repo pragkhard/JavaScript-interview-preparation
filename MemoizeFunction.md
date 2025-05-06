@@ -20,3 +20,42 @@ Problem Statement -
         console.log(clumsyssquare(9467, 7649));
         console.timeEnd("Second call");
 
+Solution-
+----------
+
+        function myMemoize(fn, context) {
+        const res = {};
+
+        return function (...args) {
+            const argsCache = JSON.stringify(args);
+
+            if (!res[argsCache]) {
+            res[argsCache] = fn.apply(context || this, args);
+            }
+
+            return res[argsCache];
+        };
+        }
+
+        // Simulating a clumsy product function with a delay
+        const ClumzyProduct = (num1, num2) => {
+        for (let i = 1; i < 100000000; i++) {} // Simulate heavy computation
+        return num1 * num2;
+        };
+
+        const memoizedClumzyProduct = myMemoize(ClumzyProduct);
+
+        console.time("First call");
+        console.log(memoizedClumzyProduct(9467, 7649));
+        console.timeEnd("First call");
+
+        console.time("Second call");
+        console.log(memoizedClumzyProduct(9467, 7649));
+        console.timeEnd("Second call");
+
+        O/p - 72413083
+              First call: 56.343ms
+              72413083
+              Second call: 0.082ms
+
+
