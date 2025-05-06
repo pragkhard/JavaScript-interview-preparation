@@ -132,3 +132,12 @@ Promise Syntax-
 
 * ".then", a method that will perform some of the action only when a given promise is fulfilled or resolved.
 * ".catch" block that will allow handling the broken or instances of error.
+
+---------------------------------------------------------------------------------------------------
+
+Async/Await- 
+-------------
+* One can declare the Async functions in JavaScript by specifying the "async" keyword in front of the function definition.
+* For handling the async functions, you can use the "await" keyword while invoking to function to wait for the promise to resolve.
+* Usage of async and await makes the program very clean and understandable. The reason being, there is no need to explicitly specify the dependencies of function calls using the ".then()" method.
+
