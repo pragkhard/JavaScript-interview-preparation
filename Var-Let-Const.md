@@ -162,7 +162,7 @@ Example-
         Let b = 20;
         const c = 30;
         }
-        
+
         Block
         b: undefined
         c: undefined
@@ -314,6 +314,7 @@ Example - 2
         O/p - 10 20 30 100
 
 Developer tools -  
+
         Block
           b:20
           c:30
