@@ -48,3 +48,5 @@ Key Points:
 ✅ Objects can inherit properties from prototypes
 ✅ Used in JavaScript's inheritance system (prototype chain)
 Let me know if you need a deeper dive! 🚀
+
+Other 
