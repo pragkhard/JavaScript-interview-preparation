@@ -11,3 +11,124 @@ Callback Function-
 Callback hell-
 ---------------
 This is a big issue caused by coding with complex nested callbacks. Here, each and every callbacktakes an argument that is a result of the previous callbacks. In this manner, The code structurelooks like a pyramid, making it difficult to read and maintain. Also, if there is an error in onefunction, then all other functions get affected.
+
+Example/ Problem statement -
+------------------------------
+
+        function addition(val, cb) {
+        return cb(val + 5, false);
+        }
+
+        function subtraction(val, cb) {
+        return cb(val - 5, false);
+        }
+
+        function multiplication(val, cb) {
+        return cb(val * 5, false);
+        }
+
+        addition(5, function (addRes, err) {
+        if (!err) {
+            subtraction(addRes, function (subRes, err) {
+            if (!err) {
+                multiplication(subRes, function (mulRes, err) {
+                if (!err) {
+                    console.log("Result:", mulRes);
+                } else {
+                    console.log("Error in multiplication");
+                }
+                });
+            } else {
+                console.log("Error in subtraction");
+            }
+            });
+        } else {
+            console.log("Error in addition");
+        }
+        });
+       
+O/p - Result: 25
+
+Condition:Resolve-
+-------------------
+
+        var promise = new Promise(function (resolve, reject) {
+        resolve(5);
+        });
+
+        function addition(val) {
+        return val + 5;
+        }
+
+        function subtraction(val) {
+        return val - 5;
+        }
+
+        function multiplication(val) {
+        return val * 5;
+        }
+
+        promise
+        .then(addition)
+        .then(subtraction)
+        .then(multiplication)
+        .then(function (msg) {
+            console.log('Result:', msg);
+        })
+        .catch(function (err) {
+            console.log('Error:', err);
+        });
+       
+O/p - Result: 25
+
+
+Condition:Reject-
+-----------------
+
+        var promise = new Promise(function (resolve, reject) {
+        reject(5);
+        });
+
+        function addition(val) {
+        return val + 5;
+        }
+
+        function subtraction(val) {
+        return val - 5;
+        }
+
+        function multiplication(val) {
+        return val * 5;
+        }
+
+        promise
+        .then(addition)
+        .then(subtraction)
+        .then(multiplication)
+        .then(function (msg) {
+            console.log('Result: ' + msg);
+        })
+        .catch(function (err) {
+            console.log('Error: ' + err);
+        });
+
+
+O/p - ERROR!
+      Error: 5
+
+-----------------------------------------------------------------------------------------------
+
+Promise Syntax-
+----------------
+
+        let myPromise = new Promise(function (myResolve, myReject) {
+            // "Producing Code" (May take some time)
+
+            myResolve(); // when successful
+            myReject();  // when error
+        });
+        myPromise.then( ).catch();
+
+
+* ".then", a method that will perform some of the action only when a given promise is fulfilled or resolved.
+* ".catch" block that will allow handling the broken or instances of error.
