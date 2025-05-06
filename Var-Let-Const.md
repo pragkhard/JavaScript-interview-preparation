@@ -272,7 +272,8 @@ Others Example -
 ----------------
 Example - 1 (Shadowing in Variable-)
 ---------------
-
+1.
+----
         var a = 100;
         {
           var a = 10;
@@ -297,8 +298,8 @@ Developer tools -
         Inner var a = 10; is shadow and it is also modify the outer variable value.
         But the both variable referring to the same memory space that is ‘Global Space’.
 
-Example - 2
-------------
+2.
+---
         let b = 100;
         {
           var a = 10;
@@ -323,8 +324,8 @@ Developer tools -
           Global
           a:10
 
-Example - 3
-------------
+3.
+---
         var c = 100;
         function x(){
         var c = 30;
@@ -334,6 +335,30 @@ Example - 3
         console.log(c)
 
         O/p - 30 100
+
+Example-2 (Shadowing in Function)
+-----------------------------------
+1.
+---
+        function showText(){
+        var text = "Resume1";
+        console.log(text)
+        }
+
+        showText()
+
+        O/p - Resume1
+
+2.
+---
+        function showText(){
+        var text = "Resume1";
+        }
+
+        showText()
+        console.log(text)
+
+        O/p - ReferenceError: text is not defined
 
 Declaration
 --------------
