@@ -94,7 +94,88 @@ Solution -
         console.log(newfun());
         newfun();
 
+----------------------------------------------------------------------------------------------------
 
+Implicit and Explicit Binding-
+------------------------------
+
+* Implicit Binding is applied when you invoke a function in an Object using the dot notation.
+* Explicit Binding can be applied using call(), apply(), and bind().
+
+Implicit Binding Example - 
+--------------------------
+
+        var obj = {
+            name:"Pragati",
+            display:function(){
+                console.log(this.name)
+            }
+        }
+        var obj1 = {
+            name:"abc",
+        }
+        obj.display()
+
+        O/p - Pragati
+
+
+Explicit Binding Example - 
+-------------------------
+
+        var obj = {
+            name:"Pragati",
+            display:function(){
+                console.log(this.name)
+            }
+        }
+        var obj1 = {
+            name:"abc",
+        }
+        obj.display.call(obj1)   
+
+        O/p - abc     
+
+---------------------------------------------------------------------------------------------------
+
+Arrow function perform different from an normal anonymous function because arrow function pointing towards the global or the window object and inside of the window object there is no such variable called “name” so that is why it is giving us an empty console log.
+
+Example - 
+
+With Normal Anonymous Function - 
+-----------------------------------
+
+        var obj = {
+            name:"Pragati",
+            display: function(){
+                console.log(this.name)
+            }
+        }
+        var obj1 = {
+            name:"abc"
+        }
+        obj.display();
+        obj.display.call(obj1);
+
+        O/p - Pragati
+              abc
+
+With Arrow function -
+----------------------
+
+        var obj = {
+            name:"Pragati",
+            display: ()=>{
+                console.log(this.name)
+            }
+        }
+        var obj1 = {
+            name:"abc"
+        }
+        obj.display();
+        obj.display.call(obj1);
+
+        O/p - undefined
+              undefined
 
 
 
