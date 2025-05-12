@@ -6,6 +6,17 @@ Callback Function-
 * A Functions that take the additional function as a parameter are called higher-order functions, and the function which passes as an argument is called a callback function.
 
 
+        A higher order function takes
+        a function as a parameter
+                     ^
+                     |
+        const higherOrderFunction = (callback) { return callback() }
+                                                        ^     
+                                                        |
+                                               A callback is a function that is 
+                                               passed as an argument
+
+As we can see from the above image, the high order function takes the callback function as a parameter. Additionally, the callback function will invoke as the last statement of the high order statement. Which, in turn, will ensure that the callback will always invoke after the high order function has completed its execution.
 
 
 Callback hell-
