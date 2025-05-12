@@ -31,5 +31,3 @@ OR
 * arr.indexOf(char) gives the first position of that character.
 * If the current position index is the same, it means it's the first time — so we keep it.
 
-Array -
-=========
