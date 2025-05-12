@@ -93,6 +93,8 @@ Invoke only first() function, it will auto-invoke second() -
         O/p - Inside function: first
               Inside function: second
 
+
+Suppose there is function function1(), which should be invoked// before function2(), then function1() can take a callback as parameter// which will be invoked as last statement of the function1().
 -----------------------------------------------------------------------------------------------------
 
 Callback hell-
