@@ -18,6 +18,82 @@ Callback Function-
 
 As we can see from the above image, the high order function takes the callback function as a parameter. Additionally, the callback function will invoke as the last statement of the high order statement. Which, in turn, will ensure that the callback will always invoke after the high order function has completed its execution.
 
+-----------------------------------------------------------------------------------------------------
+
+        function first() {
+        console.log("Inside function: first");
+        }
+
+        function second() {
+        console.log("Inside function: Second");
+        }
+
+        first();
+        second();
+
+        O/p- Inside function: first
+             Inside function: Second
+
+----------------------------------------------------------------------------------------------------
+If I want to print second console first.
+
+
+        function first() {
+        console.log("Inside function: first");
+        }
+        
+        function second(callback) {
+        console.log("Inside function: Second");
+        callback();
+
+        }
+        second(first);
+        
+        O/p - Inside function: Second
+              Inside function: first
+
+----------------------------------------------------------------------------------------------------
+
+Simulate a code delay
+
+        function first() {
+        // Simulate a code delay
+        setTimeout(function () {
+            console.log("Inside function: first");
+        }, 1500);
+        }
+
+        function second() {
+        console.log("Inside function: second");
+        }
+
+        first();
+        second();
+
+        O/p - Inside function: second
+              Inside function: first
+
+-----------------------------------------------------------------------------------------------------
+Invoke only first() function, it will auto-invoke second() - 
+
+        function first(callback) {
+        // Simulate a code delay
+        setTimeout(function () {
+            console.log("Inside function: first");
+            callback();
+        }, 1500);
+        }
+
+        function second() {
+        console.log("Inside function: second");
+        }
+
+        first(second);
+
+        O/p - Inside function: first
+              Inside function: second
+
+-----------------------------------------------------------------------------------------------------
 
 Callback hell-
 ---------------
