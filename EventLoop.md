@@ -12,7 +12,7 @@ Whenever any JS program is run a global context is created and GEC pused inside 
 
 Order of exection is :
 ---------------------------------------------------------------------------------------------------
-console.log("start")
+        console.log("start")
 This is a synchronous statement.It gets executed immediately and prints: start
 
         setTimeout(function(){
@@ -21,7 +21,7 @@ This is a synchronous statement.It gets executed immediately and prints: start
 setTimeout is an asynchronous function.It is handled by the Web APIs(provided by the browse) with a 1000ms timer but doesn’t execute yet
 Callstack will not wait anything it will print whatever comes inside it 
 
-console.log("end")
+        console.log("end")
 
 ---------------------------------------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ Once the API response is received, the fetch .then() callback moves from the Mic
 Macrotasks (Lower Priority than Microtasks)
 After 1 second, the setTimeout callback moves from the Macrotask Queue to the Call Stack.
 
-console.log("end")
+        console.log("end")
 
 -----------------------------------------------------------------------------------------------------
 
