@@ -15,4 +15,4 @@ I am always eager to explore new technologies and optimize frontend performance 
 
 Role and responsibilities -
 ----------------------------
-In my current role, I develop functional components using ReactJS and manage state with Redux. I also integrate RESTful APIs into the application and fix bugs. After development, I execute test cases using React Testing Library and Jest, achieving 85% test coverage. Additionally, I handle the deployment process using AWS for hosting the application and Jenkins CI/CD pipelines.
+In my current role, I writing clear, concise code functional components using ReactJS that is easy to maintain that is leading app to boost it's performance. additionlly usingthe libraries-  for global state manager we are using  Redux, For navigation using routing, and for handling the middleware using saga. I also integrate RESTful APIs into the application and troubleshoot and fix bugs. After development, I execute test cases using React Testing Library and Jest, achieving 85% test coverage. Additionally, I handle the deployment process using AWS for hosting the application and Jenkins CI/CD pipelines.
