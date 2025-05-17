@@ -65,8 +65,8 @@ After 1 second, the setTimeout callback moves from the Macrotask Queue to the Ca
         console.log("end")
 
         O/p-
-        start
-        end
-        promise resolve
-        fetch data received
-        setTimeout
+       start
+       end
+       promise resolve - Microtask Queue
+       fetch data received - Macrotask Queue
+       setTimeout - Macrotask Queue
