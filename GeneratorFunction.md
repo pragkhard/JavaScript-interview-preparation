@@ -19,5 +19,5 @@ next(): Resumes execution and returns the next yielded value.
         console.log(gen.next().value); // undefined (no more yields)
 
 
-gen.next() resumes the function and returns an object like { value: 1, done: false }.
-When the generator is exhausted, value becomes undefined and done becomes true.
+* gen.next() resumes the function and returns an object like { value: 1, done: false }.
+* When the generator is exhausted, value becomes undefined and done becomes true.
