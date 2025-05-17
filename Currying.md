@@ -1,3 +1,24 @@
+* What is Currying?
+* Why should currying be used?
+* How does currying work?
+* Interview Questions
+* Currying v/s partial application
+* Manipulating DOM using currying
+
+* Currying is a function that takes one argument at a time and returns a new function expecting the next argument. It is a conversion of functions from callable as f(a,b,c)into callable as f(a)(b)(c).
+* Basically Currying doesn’t call a function. It just transforms a function. They are constructed by chaining closures by immediately returning their inner functions simultaneously.
+
+Convert f(a, b) into f(a)(b).
+------------------------------
+
+f(a,b) implementation -
+-----------------------
+
+        function f(a,b) {
+            return "Works"
+        }
+
+
 Currying is a technique of evaluating function with multiple arguments, into sequence of functions with single argument. In other words, when a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one, and so forth, until all arguments have been fulfilled.
 Uses of currying function
   * It helps to avoid passing same variable again and again.
