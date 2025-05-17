@@ -42,6 +42,13 @@ After 1 second, the setTimeout callback moves from the Macrotask Queue to the Ca
 
         console.log("end")
 
+
+        O/p - 
+        start
+        end
+        fetch data received
+        setTimeout
+
 -----------------------------------------------------------------------------------------------------
 
         console.log("start")
