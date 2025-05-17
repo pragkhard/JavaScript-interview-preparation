@@ -53,14 +53,14 @@ After 1 second, the setTimeout callback moves from the Macrotask Queue to the Ca
 
         console.log("start")
         setTimeout(function () {
-            console.log("setTimeout")
+            console.log("setTimeout - Macrotask Queue")
         }, 1000)
 
         fetch("https://jsonplaceholder.typicode.com/todos/1")
             .then(response => response.json())
-            .then(data => console.log("fetch data received"));
+            .then(data => console.log("fetch data received - Macrotask Queue"));
 
-        Promise.resolve().then(() => console.log("promise resolve"))
+        Promise.resolve().then(() => console.log("promise resolve - Microtask Queue"))
 
         console.log("end")
 
