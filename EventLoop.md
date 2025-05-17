@@ -12,16 +12,15 @@ Whenever any JS program is run a global context is created and GEC pused inside 
 
 Order of exection is :
 ---------------------------------------------------------------------------------------------------
-        console.log("start")
-This is a synchronous statement.It gets executed immediately and prints: start
 
+        console.log("start")(This is a synchronous statement.It gets executed immediately and prints: start)
         setTimeout(function(){
             console.log("setTimeout")
         },1000)
+        console.log("end")
+
 setTimeout is an asynchronous function.It is handled by the Web APIs(provided by the browse) with a 1000ms timer but doesn’t execute yet
 Callstack will not wait anything it will print whatever comes inside it 
-
-        console.log("end")
 
 ---------------------------------------------------------------------------------------------------
 
@@ -33,15 +32,13 @@ Callstack will not wait anything it will print whatever comes inside it
         fetch("https://jsonplaceholder.typicode.com/todos/1")
             .then(response => response.json())
             .then(data => console.log("fetch data received"));
+        console.log("end")    
 
 The network request is sent asynchronously. The .then(...) callback is stored in the Microtask Queue
 Once the API response is received, the fetch .then() callback moves from the Microtask Queue to the Call Stack.
 
 Macrotasks (Lower Priority than Microtasks)
 After 1 second, the setTimeout callback moves from the Macrotask Queue to the Call Stack.
-
-        console.log("end")
-
 
         O/p - 
         start
