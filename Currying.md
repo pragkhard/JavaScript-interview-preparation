@@ -1,3 +1,6 @@
+Topics
+=========
+
 * What is Currying?
 * Why should currying be used?
 * How does currying work?
