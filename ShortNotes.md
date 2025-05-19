@@ -5,7 +5,7 @@ Hello, I’m **Pragati Khard**, a Frontend Developer with **6 years of experienc
  
 specializing in **ReactJS** and modern web technologies. My expertise lies in **building scalable, high-performance UI components** for web applications, primarily in the **Banking and Financial Services** domain.  
  
-Currently, I’m working at Capgemini for the Barclays client, where I develop dynamic and responsive UI components using ReactJS, manage state efficiently with Redux, and ensure high-quality code by writing unit tests with Jest and React Testing Library. Additionally, I handle CI/CD deployments using Jenkins and AWS S3, ensuring smooth and automated releases.
+Currently, I’m working at Capgemini for the Barclays client, where I develop dynamic and responsive UI components using ReactJS, manage state with Redux, and maintain code quality by writing unit tests with Jest and React Testing Library. Additionally, I handle CI/CD deployments using Jenkins and AWS S3, ensuring smooth and automated releases.
  
 Before joining Capgemini, I spent 5 years at  Cognizant,  I worked on projects for J.P. Morgan, Wells Fargo, and Freedom Mortgage, where I contributed to migrating legacy applications to ReactJS, implementing responsive designs, and ensuring accessibility compliance.
  
