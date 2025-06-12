@@ -25,4 +25,6 @@ Or It stores the data only for one session. The data is deleted when the user cl
 Example:
 Suppose a user is visiting a web app as soon as the visiting web app session started and the data which is stored in Session Storage only be persist till the user is active in the web browser window. Once the user closes the tab or window of the browser, the data is lost in the session storage— this is how session storage works.
 
-Unlike cookies, Session Storage data is not been send to the server by making the network request call. or we can say that Session Storage are not sent to server wit each request.
+* Unlike cookies, Session Storage data is not been send to the server by making the network request call. or we can say that Session Storage are not sent to server wit each request.
+* Session Storage has a larger capacity to hold data compared to cookies.
+In cookies, we can store around 4KB of data, whereas in Session Storage, we can store up to 5MB of data.
