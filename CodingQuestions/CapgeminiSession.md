@@ -1,11 +1,11 @@
 Given the following array of user objects:
 
-const data = [
-  { username: "jamesdevid56", password: "Admin@345", intigrity: null },
-  { username: "admin", password: "secrete", intigrity: null },
-  { username: "praneetkumar", password: "ABC@*73", intigrity: null },
-  { username: "divyansh56", password: "D.56@shDivyansh", intigrity: null },
-];
+      const data = [
+        { username: "jamesdevid56", password: "Admin@345", intigrity: null },
+        { username: "admin", password: "secrete", intigrity: null },
+        { username: "praneetkumar", password: "ABC@*73", intigrity: null },
+        { username: "divyansh56", password: "D.56@shDivyansh", intigrity: null },
+      ];
 
 Update the intigrity property for each user based on the following validation rules:
 
