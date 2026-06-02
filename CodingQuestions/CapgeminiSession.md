@@ -27,3 +27,27 @@ Password Policy-
 Requirement-
 * intigrity = false → Username and Password are valid.
 * intigrity = true → Username or Password is invalid.
+
+              const data = [
+                { username: "jamesdevid56", password: "Admin@345", intigrity: null },
+                { username: "admin", password: "secrete", intigrity: null },
+                { username: "praneetkumar", password: "ABC@*73", intigrity: null },
+                { username: "divyansh56", password: "D.56@shDivyansh", intigrity: null },
+            ];
+            
+            const usernameRegex = /^[a-zA-Z][a-zA-Z0-9]{6,13}\d$/;
+            const passwordRegex =
+                /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/;
+            
+            
+            var result = data.map((item, index) => {
+            
+                if (usernameRegex.test(item.username) && passwordRegex.test(item.password)) {
+                    return { ...item, intigrity: true }
+                }
+                else {
+                    return { ...item, intigrity: false }
+                }
+            });
+            
+            console.log(result);
