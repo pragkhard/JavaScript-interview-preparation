@@ -51,3 +51,16 @@ Requirement-
             });
             
             console.log(result);
+
+Output- 
+
+            [
+              { username: 'jamesdevid56', password: 'Admin@345', intigrity: true },
+              { username: 'admin', password: 'secrete', intigrity: false },
+              { username: 'praneetkumar', password: 'ABC@*73', intigrity: false },
+              {
+                username: 'divyansh56',
+                password: 'D.56@shDivyansh',
+                intigrity: true
+              }
+            ]
