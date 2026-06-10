@@ -65,7 +65,8 @@ Point - 3
 ----------
 
 The problem comes with var. 
-Suppose are using var and we have one forloop and inside of the forloop we are updating the i because of var what happened so i will be having the same memory allocation.so it will updating the same value.
+
+Suppose we are using var inside a for loop. When we update i inside the loop, due to how var works, it does not create a new memory reference for each iteration. Instead, i(variable) shares the same memory allocation across all iterations. As a result, the final value of i (variable) is logged repeatedly.
  
 Because of the concern Es6 features get introduced with a block scope. So, with the block scope everytime loops runs, it creates another block scope for this function / It will be a seperate momory allocation.
 
