@@ -27,8 +27,8 @@ Memory concept
                                         [1, 2, 3, 4]
 
 
-2. How to Prevent This Problem?
-==================================
+2. How to Prevent This Problem-
+-----------------------------------
 
 The video explains three ways to create a separate array.
 
