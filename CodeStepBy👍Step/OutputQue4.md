@@ -59,12 +59,12 @@ Here:
 -----------------------------------
 4. Important Interview Takeaways
 -----------------------------------
-Concept	                    -       Explanation
-Type Inference	            -       TypeScript automatically detects data types
-Variable Inference	        -       Detects type from assigned value
-Return Type Inference	    -       Detects function return type
-Union Type	                -       Allows multiple data types
-Explicit Typing	            -       Manually defines the data type
+- Concept	                    -       Explanation
+- Type Inference	            -       TypeScript automatically detects data types
+- Variable Inference	        -       Detects type from assigned value
+- Return Type Inference	    -       Detects function return type
+- Union Type	                -       Allows multiple data types
+- Explicit Typing	            -       Manually defines the data type
 
 
  ------------------------------------------------------------
