@@ -17,7 +17,7 @@ JavaScript Assignment Operator Tricky Interview Questions
                                 b += 3;
                                 console.log(b); // "1,23"
 
-
+----------------------------------
 1. Assignment and Post-Increment
 ----------------------------------
 
@@ -32,7 +32,7 @@ Explanation:
 - Then a is incremented to 4.
 Output: b = 3, a = 4.
 
-
+--------------------------------------------
 2. Pre-Increment and Post-Increment
 ---------------------------------------
 
@@ -47,6 +47,7 @@ Explanation:
 - The final result is assigned to a.
 Output: 4.
 
+--------------------------------------------
 3. Addition Assignment Operator with Arrays
 --------------------------------------------
 
@@ -61,10 +62,9 @@ Explanation:
 - It then concatenates "3" with "1,2".
 Output: "1,23" (a string, not an array).
 
-
-
+--------------------------------------------
 Important JavaScript Interview Concepts
------------------------------------------
+ -----------------------------------------
 
 1. Post-Increment (a++): Returns the old value, then increments.
 2. Pre-Increment (++a): Increments first, then returns the new value.

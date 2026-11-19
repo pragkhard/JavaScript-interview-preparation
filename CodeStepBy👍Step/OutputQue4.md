@@ -1,7 +1,7 @@
 TypeScript Magic Type Inference | Angular, Typescript and react js Interview Ready #typescript
 ==============================================================================================
 
-
+--------------------------------------------
 1. What is Type Inference?
 --------------------------
 
@@ -19,7 +19,7 @@ TypeScript automatically understands:
 - "Apple" is a string.
 - 50 is a number.
 
-
+-------------------------------
 2. Type Inference in Functions
 -------------------------------
 
@@ -40,7 +40,7 @@ function getName() {
 
 TypeScript automatically infers the return type as string.
 
-
+------------------------------------------------
 3. When Do We Need to Define Types Explicitly?
 ------------------------------------------------
 
@@ -56,7 +56,7 @@ Here:
 - TypeScript cannot automatically predict all future values.
 - Therefore, we explicitly define the allowed types.
 
-
+-----------------------------------
 4. Important Interview Takeaways
 -----------------------------------
 Concept	                    -       Explanation
@@ -67,6 +67,7 @@ Union Type	                -       Allows multiple data types
 Explicit Typing	            -       Manually defines the data type
 
 
+ ------------------------------------------------------------
 Interview question: What is Type Inference in TypeScript?
  ------------------------------------------------------------
 
