@@ -16,7 +16,7 @@ You are given an array containing duplicate values. Your task is to remove the d
 
 ------------------------------------
 Step 1 – Iterate through the array
- -----------------------------------
+- ----------------------------------
 
                                     First, apply a for loop.
                                     for (let i = 0; i < arr.length; i++) {
