@@ -203,12 +203,12 @@ let str = "HELLO";
 The function processes each character:
 --------------------------------------- -
 
-Character ->	 Charactercode	->   Condition	   ->  Convertedcharacter
-H	      ->      72	        ->    Uppercase	   ->       h (104)
-E	      ->      69	        ->    Uppercase	   ->       e (101)
-L	      ->      76	        ->    Uppercase	   ->       l (108)
-L	      ->      76	        ->    Uppercase	   ->       l (108)
-O	      ->      79	        ->    Uppercase	   ->       o (111)
+- Character ->	 Charactercode	->   Condition	   ->  Convertedcharacter
+- H	      ->      72	        ->    Uppercase	   ->       h (104)
+- E	      ->      69	        ->    Uppercase	   ->       e (101)
+- L	      ->      76	        ->    Uppercase	   ->       l (108)
+- L	      ->      76	        ->    Uppercase	   ->       l (108)
+- O	      ->      79	        ->    Uppercase	   ->       o (111)
 
 The result is built character by character:
 "" → "h" → "he" → "hel" → "hell" → "hello"
@@ -221,12 +221,12 @@ hello
 ---------------------------------
 10. Important interview concepts
 ---------------------------------
-JavaScript method/property	             ->                               Purpose
-str.length	                             ->                       Gets the length of a string
-str[i]	                                 ->                       Accesses a character by index
-charCodeAt(i)	                         ->                       Gets the numeric character code
-String.fromCharCode(code)	             ->                       Converts a character code into a character
-result += value	                         ->                       Appends a character to a string
+- JavaScript method/property	             ->                               Purpose
+- str.length	                             ->                       Gets the length of a string
+- str[i]	                                 ->                       Accesses a character by index
+- charCodeAt(i)	                             ->                       Gets the numeric character code
+- String.fromCharCode(code)	                 ->                       Converts a character code into a character
+- result += value	                         ->                       Appends a character to a string
 
 Time complexity: O(n), because we iterate through the string once.
 Space complexity: O(n), because we create a new result string.
