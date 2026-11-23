@@ -193,6 +193,3 @@ At the end, the speaker mentions that more JavaScript interview questions are av
 - Time complexity: O(n) for both approaches.
 - Space complexity: O(1) auxiliary space for both approaches.
 
-Important technical clarification: The two approaches are not exactly equivalent for every Unicode string. for...of counts Unicode code points, whereas str[count] accesses UTF-16 code units. For example, an emoji such as "😊" is counted as one by for...of, but two by the while approach.
-
-Interview takeaway: The key concept is that you can calculate the number of characters by iterating through a string and incrementing a counter, without using the built-in .length property.
