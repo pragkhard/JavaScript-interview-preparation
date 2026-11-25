@@ -87,7 +87,7 @@ Initially:
 union = [];
 obj = {};
 
-
+-----------------------------------------
 Step 2: Iterate through the first array
 ----------------- ------------------------
 
@@ -110,7 +110,7 @@ obj = {
     4: true
 };
 
-
+-----------------------------------------
 Step 3: Iterate through the second array
 ----------------- ------------------------
 
@@ -137,8 +137,9 @@ Element	Already exists in object?	Action
 After the second loop:
 union = [1, 2, 3, 4, 5, 6];
 
-
+------------------------------
 Step 4: Return the final array
+------------------------------ -
 return union;
 
 
